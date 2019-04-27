@@ -1,0 +1,36 @@
+//Maurits Brouwer portfolio website 
+//Variables
+
+//--colors--
+$black: black;
+$white: white;
+$black-grey: #1E1E1E;
+
+//--fonts--
+$roboto: 'roboto';
+
+//--font-weight--
+$font-regular: 400;
+$font-bold: 700;
+$font-black: 900; 
+
+//--breakpoints--
+$tablet-max: 768px;
+$mobile-btwn: 400px;
+
+
+//sass @extend
+//usage: @extend %vertical-center; 
+
+//when using this, make sure parent element is position: relative;
+//will set the element perfectly centered based on the partents height.
+%vertical-center {
+	position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+%horizontal-center {
+	display: block;
+	margin: 0 auto;
+}
