@@ -1,139 +1,74 @@
 @import 'variables';
+@import 'neat/neat';
 
 * {
-	font-family: $roboto, 'sans-serif';
+	font-family: $montserrat, 'sans-serif';
 	margin: 0;
 	padding: 0;
-	color: white;
+	color: black;
 	letter-spacing: normal;
 }
 
 body {
-	background-color: $black-grey;
+	background-color: $white-yellow;
+	min-height: 2000px;
 }
 
-.nav {
-	.nav__name {
-		font-size: 20px;
-		position: absolute;
-		top: 10px;
-		left: 20px;
-		font-weight: $font-regular;
-		text-decoration: none;
-		@media only screen and (max-width: $mobile-btwn) {
-			left: 10px;
-		}
+a {
+	text-decoration: none;
+}
+
+.title {
+	font-size: 21px;
+	text-transform: uppercase;
+	position: sticky;
+	top: 30px;
+	@include grid-container();
+
+	.title__name {
+		@include grid-column(4);
+	}
+
+	.title__job {
+		text-align: center;
+		@include grid-column(4);
+	}
+
+	.title__nav {
+		text-align: right;
+		@include grid-column(4);
 	}
 }
 
-.main {
-	max-width: 380px;
-	height: 100%;
-	border-right: 5px solid white;
-	margin-top: 80px;
+.header {
+	@include grid-container();
 	position: relative;
-	padding-left: 5px;
-	padding-right: 5px;
-	@extend %horizontal-center;
 
-	@media only screen and (max-width: $mobile-btwn) {
-		margin-left: 5px;
-		margin-right: 5px;
-		margin-top: 45px;
-	}
+	.header__number {
+		@include grid-column(11);
+		@include grid-shift(1);
 
-	@media only screen and(min-height: 900px){
-		height: 100vh;
-	}
-
-	.main__image {
-		width: 100%;
-		@extend %horizontal-center;
-	}
-}
-
-
-.branding {
-	position: absolute;
-	top: 306px;
-	left: -100px;
-
-	@media only screen and (max-width: $tablet-max) {
-		position: relative;
-		top: 0px;
-		left: 0px;
-	}
-
-	.branding__background {
-		position: absolute;
-		top: -186px;
-		left: -125px;
-		font-size: 280px;
-		font-weight: $font-black;
-		word-wrap: break-word;
-		width: 333px;
-		opacity: 0.1;
-		z-index: -1;
-		line-height: 300px;
-
-		@media only screen and (max-width: $tablet-max) {
-			font-size: 160px;
-			width: 200px;
-			line-height: 185px;
-			top: -37px;
-			left: -8px;
-		}
-	}
-
-	.branding__number {
-		font-size: 80px;
+		margin-top: 50px;
+		position: fixed;
+		font-size: 400px;
 		font-weight: $font-bold;
-		word-wrap: break-word;
-		width: 100px;
-
-		@media only screen and (max-width: $tablet-max) {
-			font-size: 60px;
-			margin-top: 10px;
-		}
 	}
 }
 
-.aboutme {
-	margin-top: 100px;
+.footer{
+	@include grid-column(12);
+	border-top: 3px solid $black;
+	display: flex;
+	flex-direction: row;
+	font-size: 21px;
+	font-weight: $font-medium;
+	justify-content: space-between;
+	margin-top: 800px;
+	padding-top: 10px;
 
-	@media only screen and (max-width: $tablet-max) {
-		margin-top: 30px;
+	.footer__name {
 	}
 
-	.aboutme__header {
-		font-size: 10px;
-		font-style: italic;
-		letter-spacing: 1.6px;
+	.footer__year {
 	}
-
-	.aboutme__text {
-		font-size: 15px;
-		letter-spacing: 1px;
-		margin-top: 5px;
-	}
-
-	.aboutme--margin{
-		margin-top: 40px;
-	}
-}
-
-.links {
-	margin-left: 5px; 
-	margin-top: 40px;
-
-	li {
-		list-style-type: none;
-		margin-bottom: 10px;
-	}
-
-	a {
-		font-size: 10px;
-		font-style: italic;
-		letter-spacing: 1.6px;
-	}	
 }
