@@ -1,5 +1,6 @@
-@import 'variables';
 @import 'neat/neat';
+@import 'variables';
+@import 'animations';
 
 * {
 	font-family: $montserrat, 'sans-serif';
@@ -22,21 +23,25 @@ a {
 	font-size: 21px;
 	text-transform: uppercase;
 	position: sticky;
-	top: 30px;
+	top: 60px;
 	@include grid-container();
 
 	.title__name {
 		@include grid-column(4);
+		@include grid-shift(1);
+		animation: fadeIn 2s ease-out;
 	}
 
 	.title__job {
 		text-align: center;
 		@include grid-column(4);
+		animation: fadeIn 2s ease-out;
 	}
 
 	.title__nav {
 		text-align: right;
-		@include grid-column(4);
+		@include grid-column(3);
+		animation: fadeIn 2s ease-out;
 	}
 }
 
@@ -45,13 +50,42 @@ a {
 	position: relative;
 
 	.header__number {
-		@include grid-column(11);
-		@include grid-shift(1);
+		@include grid-column(10);
+		@include grid-shift(2);
 
-		margin-top: 50px;
+		margin-top: 45px;
 		position: fixed;
-		font-size: 400px;
+		font-size: 450px;
 		font-weight: $font-bold;
+
+		&:after {
+			content: '';
+			position: absolute;
+			top: 167px;
+			left: 496px;
+			width: 7px;
+			height: 269px;
+			background-color: black;
+			transform: skew(-23.5deg, 0deg);
+			animation: firstload 1s ease-out;
+		}
+	}
+}
+
+.headline {
+	border-top: 3px solid $black;
+	margin-top: calc(100vh - 50px);
+	padding-top: 10px;
+	font-size: 25px;
+
+	.headline__number {
+		@include grid-column(6);
+	}
+
+	.headline__subtext {
+		@include grid-column(6);
+		text-align: right;
+		font-weight: $font-medium;
 	}
 }
 
@@ -72,3 +106,9 @@ a {
 	.footer__year {
 	}
 }
+
+.aside {
+	@include grid-column(7);
+	@include grid-shift(5);
+}
+

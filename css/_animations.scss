@@ -1,0 +1,17 @@
+@keyframes fadeIn{
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+
+}
+@keyframes firstload {
+  0% {
+  	left: 470px;
+  }
+  100% {
+  	left: 496px;
+  }
+}

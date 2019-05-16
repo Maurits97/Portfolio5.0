@@ -28,6 +28,20 @@ var header = new Vue({
 	`
 })
 
+var headline = new Vue({
+	el: '.headline',
+	data: {
+		number: 'Nr. 1',
+		subtext: 'Wie is deze jongen?'
+	},
+	template: `
+		<div class='headline aside'>
+			<p class='headline__number'>{{ number }}</p>
+			<p class='headline__subtext'>{{ subtext }}</p>
+		</div>
+	`
+})
+
 var footer = new Vue({
 	el: '.footer',
 	data: {
