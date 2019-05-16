@@ -1,8 +1,3 @@
-@keyframes fadeIn {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
 @keyframes firstload {
   0% {
     left: 470px; }
@@ -17,6 +12,7 @@
 
 body {
   background-color: #F9F5F1;
+  overflow-x: hidden;
   min-height: 2000px; }
 
 a {
@@ -36,20 +32,17 @@ a {
     float: left;
     margin-left: 20px;
     left: calc(8.3333333333% - 21.6666666667px + 20px);
-    position: relative;
-    animation: fadeIn 2s ease-out; }
+    position: relative; }
   .title .title__job {
     text-align: center;
     width: calc(33.3333333333% - 26.6666666667px);
     float: left;
-    margin-left: 20px;
-    animation: fadeIn 2s ease-out; }
+    margin-left: 20px; }
   .title .title__nav {
     text-align: right;
     width: calc(25% - 25px);
     float: left;
-    margin-left: 20px;
-    animation: fadeIn 2s ease-out; }
+    margin-left: 20px; }
 
 .header {
   position: relative; }
@@ -64,6 +57,7 @@ a {
     left: calc(16.6666666667% - 23.3333333333px + 20px);
     position: relative;
     margin-top: 45px;
+    margin-left: 300px;
     position: fixed;
     font-size: 450px;
     font-weight: 700; }
@@ -80,7 +74,7 @@ a {
 
 .headline {
   border-top: 3px solid black;
-  margin-top: calc(100vh - 50px);
+  margin-top: calc(100vh + 50px);
   padding-top: 10px;
   font-size: 25px; }
   .headline .headline__number {

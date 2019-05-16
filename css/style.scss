@@ -8,10 +8,12 @@
 	padding: 0;
 	color: black;
 	letter-spacing: normal;
+
 }
 
 body {
 	background-color: $white-yellow;
+	overflow-x: hidden;
 	min-height: 2000px;
 }
 
@@ -29,19 +31,16 @@ a {
 	.title__name {
 		@include grid-column(4);
 		@include grid-shift(1);
-		animation: fadeIn 2s ease-out;
 	}
 
 	.title__job {
 		text-align: center;
 		@include grid-column(4);
-		animation: fadeIn 2s ease-out;
 	}
 
 	.title__nav {
 		text-align: right;
 		@include grid-column(3);
-		animation: fadeIn 2s ease-out;
 	}
 }
 
@@ -54,6 +53,7 @@ a {
 		@include grid-shift(2);
 
 		margin-top: 45px;
+		margin-left: 300px;
 		position: fixed;
 		font-size: 450px;
 		font-weight: $font-bold;
@@ -74,7 +74,7 @@ a {
 
 .headline {
 	border-top: 3px solid $black;
-	margin-top: calc(100vh - 50px);
+	margin-top: calc(100vh + 50px);
 	padding-top: 10px;
 	font-size: 25px;
 

@@ -4,7 +4,7 @@ var title = new Vue({
 		name: 'Maurits Brouwer',
 	},
 	template: `
-		<div class='title'>
+		<div class='title' data-aos="fade-down" data-aos-duration="1000">
 			<p href='index.html' class='title__name'>
 				{{ name }}
 			</p>
@@ -35,7 +35,7 @@ var headline = new Vue({
 		subtext: 'Wie is deze jongen?'
 	},
 	template: `
-		<div class='headline aside'>
+		<div class='headline aside' data-aos="fade-left" data-aos-duration="1000">
 			<p class='headline__number'>{{ number }}</p>
 			<p class='headline__subtext'>{{ subtext }}</p>
 		</div>
