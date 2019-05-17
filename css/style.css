@@ -57,7 +57,7 @@ a {
     left: calc(16.6666666667% - 23.3333333333px + 20px);
     position: relative;
     margin-top: 45px;
-    margin-left: 300px;
+    margin-left: 120px;
     position: fixed;
     font-size: 450px;
     font-weight: 700; }
@@ -72,9 +72,11 @@ a {
       transform: skew(-23.5deg, 0deg);
       animation: firstload 1s ease-out; }
 
+.main {
+  margin-top: calc(100vh + 50px); }
+
 .headline {
   border-top: 3px solid black;
-  margin-top: calc(100vh + 50px);
   padding-top: 10px;
   font-size: 25px; }
   .headline .headline__number {
@@ -101,11 +103,21 @@ a {
   margin-top: 800px;
   padding-top: 10px; }
 
-.aside {
+.aside--left {
+  width: calc(58.3333333333% - 31.6666666667px);
+  float: left;
+  margin-left: 20px; }
+
+.aside--right {
   width: calc(58.3333333333% - 31.6666666667px);
   float: left;
   margin-left: 20px;
   left: calc(41.6666666667% - 28.3333333333px + 20px);
   position: relative; }
+
+.dik {
+  width: 100%;
+  height: 500px;
+  background-color: grey; }
 
 /*# sourceMappingURL=style.css.map */

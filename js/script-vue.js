@@ -29,18 +29,48 @@ var header = new Vue({
 })
 
 var headline = new Vue({
-	el: '.headline',
+	el: '.headline.vue--one',
 	data: {
 		number: 'Nr. 1',
 		subtext: 'Wie is deze jongen?'
 	},
 	template: `
-		<div class='headline aside' data-aos="fade-left" data-aos-duration="1000">
+		<div class='headline aside--right' data-aos="fade-right" data-aos-duration="1000">
 			<p class='headline__number'>{{ number }}</p>
 			<p class='headline__subtext'>{{ subtext }}</p>
 		</div>
 	`
 })
+
+var headline = new Vue({
+	el: '.headline.vue--two',
+	data: {
+		number: 'Nr. 2',
+		subtext: 'Dit heb ik gemaakt.'
+	},
+	template: `
+		<div class='headline aside--left' data-aos="fade-left" data-aos-duration="1000">
+			<p class='headline__number'>{{ number }}</p>
+			<p class='headline__subtext'>{{ subtext }}</p>
+		</div>
+	`
+})
+
+var headline = new Vue({
+	el: '.headline.vue--three',
+	data: {
+		number: 'Nr. 3',
+		subtext: 'Wil jij mij bereiken?'
+	},
+	template: `
+		<div class='headline aside--right' data-aos="fade-right" data-aos-duration="1000">
+			<p class='headline__number'>{{ number }}</p>
+			<p class='headline__subtext'>{{ subtext }}</p>
+		</div>
+	`
+})
+
+
 
 var footer = new Vue({
 	el: '.footer',
