@@ -21,7 +21,7 @@ var header = new Vue({
 	},
 	template: `
 		<div class='header'>
-			<p class='header__number'>
+			<p class='header__number' data-aos="fade-up">
 				{{ number }}
 			</p>
 		</div>

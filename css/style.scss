@@ -58,6 +58,12 @@ a {
 		font-size: 450px;
 		font-weight: $font-bold;
 
+		@media only screen and (min-width: $desktop-max) {
+			.header__number {
+				font-size: 600px;
+			}
+		}
+
 		&:after {
 			content: '';
 			position: absolute;
@@ -68,6 +74,10 @@ a {
 			background-color: black;
 			transform: skew(-23.5deg, 0deg);
 			animation: firstload 1s ease-out;
+
+			@media only screen and (min-width: $desktop-max) {
+				
+			}
 		}
 	}
 }
