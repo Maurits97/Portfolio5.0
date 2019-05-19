@@ -131,11 +131,11 @@ a {
   padding-top: 10px;
   font-size: 25px; }
   .headline .headline__number {
-    width: calc(50% - 30px);
+    width: calc(25% - 25px);
     float: left;
     margin-left: 20px; }
   .headline .headline__subtext {
-    width: calc(50% - 30px);
+    width: calc(75% - 35px);
     float: left;
     margin-left: 20px;
     text-align: right;
@@ -153,11 +153,22 @@ a {
   justify-content: space-between;
   margin-top: 800px;
   padding-top: 10px; }
+  @media only screen and (min-width: 1440px) {
+    .footer {
+      width: calc(83.3333333333% - 36.6666666667px);
+      float: left;
+      margin-left: 20px;
+      left: calc(8.3333333333% - 21.6666666667px + 20px);
+      position: relative; } }
 
 .aside--left {
   width: calc(58.3333333333% - 31.6666666667px);
   float: left;
   margin-left: 20px; }
+  @media only screen and (min-width: 1440px) {
+    .aside--left {
+      left: calc(8.3333333333% - 21.6666666667px + 20px);
+      position: relative; } }
 
 .aside--right {
   width: calc(58.3333333333% - 31.6666666667px);
@@ -165,6 +176,10 @@ a {
   margin-left: 20px;
   left: calc(41.6666666667% - 28.3333333333px + 20px);
   position: relative; }
+  @media only screen and (min-width: 1440px) {
+    .aside--right {
+      left: calc(33.3333333333% - 26.6666666667px + 20px);
+      position: relative; } }
 
 .dik {
   width: 100%;
