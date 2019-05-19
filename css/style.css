@@ -8,6 +8,13 @@
     left: 628px; }
   100% {
     left: 664px; } }
+@keyframes arrow {
+  0% {
+    transform: translatey(0px); }
+  50% {
+    transform: translatey(10px); }
+  100% {
+    transform: translatey(0px); } }
 * {
   font-family: "montserrat", "sans-serif";
   margin: 0;
@@ -110,10 +117,11 @@ a {
           animation: firstload--high 1s ease-out; } }
 
 .arrow {
-  margin-top: calc(90vh);
+  margin-top: calc(89vh);
   font-size: 50px !important;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  animation: arrow 3s infinite; }
 
 .main {
   margin-top: 50px; }
