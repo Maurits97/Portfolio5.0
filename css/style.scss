@@ -22,15 +22,18 @@ a {
 }
 
 .title {
-	font-size: 21px;
+	@include grid-container();
+	font-size: 16px;
 	text-transform: uppercase;
 	position: sticky;
 	top: 60px;
-	@include grid-container();
+	
 
 	.title__name {
 		@include grid-column(4);
 		@include grid-shift(1);
+		font-size: 21px;
+		margin-top: -4px;
 	}
 
 	.title__job {
@@ -58,10 +61,8 @@ a {
 		font-size: 450px;
 		font-weight: $font-bold;
 
-		@media only screen and (min-width: $desktop-max) {
-			.header__number {
-				font-size: 600px;
-			}
+		@media only screen and (min-width: $desktop-high) {
+			font-size: 600px;
 		}
 
 		&:after {
@@ -75,14 +76,15 @@ a {
 			transform: skew(-23.5deg, 0deg);
 			animation: firstload 1s ease-out;
 
-			@media only screen and (min-width: $desktop-max) {
-				
+			@media only screen and (min-width: $desktop-high) {
+				top: 224px;
+				left: 664px;
+				width: 9px;
+				height: 357px;
+				animation: firstload--high 1s ease-out;
 			}
 		}
 	}
-}
-.headline--one {
-
 }
 .main {
 	margin-top: calc(100vh + 50px);
