@@ -86,8 +86,15 @@ a {
 		}
 	}
 }
+.arrow {
+	margin-top: calc(90vh);
+	font-size: 50px !important;
+	width: 100%;
+	text-align: center;
+}
+
 .main {
-	margin-top: calc(100vh + 50px);
+	margin-top: 50px;
 }
 
 .headline {
