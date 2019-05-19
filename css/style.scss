@@ -28,22 +28,36 @@ a {
 	position: sticky;
 	top: 60px;
 	
-
 	.title__name {
 		@include grid-column(4);
 		@include grid-shift(1);
 		font-size: 21px;
 		margin-top: -4px;
+		@media only screen and (max-width: $tablet-max) {
+			@include grid-column(10);
+		}
 	}
 
 	.title__job {
 		text-align: center;
 		@include grid-column(4);
+
+		@media only screen and (max-width: $tablet-max) {
+			@include grid-column(10);
+			@include grid-shift(1);
+			top: 30px;
+			position: absolute;
+			text-align: left;
+		}
 	}
 
 	.title__nav {
 		text-align: right;
 		@include grid-column(3);
+
+		@media only screen and (max-width: $tablet-max) {
+			@include grid-column(2);
+		}
 	}
 }
 
