@@ -28,6 +28,7 @@ a {
 	position: sticky;
 	top: 60px;
 	z-index: 1;
+	animation: 1.5s opacity ease-out;
 	
 	.title__name {
 		@include grid-column(4);

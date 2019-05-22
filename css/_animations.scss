@@ -1,3 +1,12 @@
+@keyframes opacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
 @keyframes firstload {
   0% {
   	left: 470px;

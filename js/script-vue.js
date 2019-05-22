@@ -4,7 +4,7 @@ var title = new Vue({
 		name: 'Maurits Brouwer',
 	},
 	template: `
-		<div class='title' data-aos="fade-down" data-aos-duration="1000">
+		<div class='title'>
 			<p href='index.html' class='title__name'>
 				{{ name }}
 			</p>
@@ -84,12 +84,12 @@ var aboutme = new Vue({
 	},
 	template: `
 		<div class='aboutme'>
-			<img :src='image.portret' class='aboutme__portret'>
+			<img :src='image.portret' class='aboutme__portret' />
 			<p class="aboutme__firstname">{{ firstname }} </p>
 			<p class="aboutme__surname">{{ surname }} </p>
 			<p class="aboutme__intro"> {{ intro }}</p>
 			<p class="aboutme__intro aboutme__intro--now"> {{ now }}</p>
-			<img :src='image.signature' class='aboutme__signature'>
+			<img :src='image.signature' class='aboutme__signature' data-aos="fade-up"/>
 		</div>
 	`
 })
