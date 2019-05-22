@@ -175,7 +175,7 @@ a {
 			@include grid-shift(1);
 			margin-top: 200px;
 
-			&--now {
+			&.aboutme__intro--now {
 				margin-top: 10px;
 			}
 

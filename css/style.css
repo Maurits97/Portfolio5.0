@@ -196,7 +196,7 @@ a {
       left: calc(8.3333333333% - 21.6666666667px + 20px);
       position: relative;
       margin-top: 200px; }
-      .main .aboutme .aboutme__intro--now {
+      .main .aboutme .aboutme__intro.aboutme__intro--now {
         margin-top: 10px; }
       @media only screen and (min-width: 1440px) {
         .main .aboutme .aboutme__intro {
