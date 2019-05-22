@@ -79,7 +79,7 @@ var aboutme = new Vue({
 		study: 'Op dit moment zit ik in mijn 3de jaar van de studie Communication & Multimedia Design aan de Haagse Hogeschool.',
 		image: {
 			portret: 'img/Portfolio_Website_Maurits_Brouwer.jpg',
-			signature: 'img/Maurits_Brouwer_Signature.png',
+			signature: 'img/Maurits_Brouwer_Signature_Web.png',
 		},
 	},
 	template: `
