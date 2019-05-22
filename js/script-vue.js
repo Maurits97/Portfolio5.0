@@ -28,7 +28,7 @@ var header = new Vue({
 	`
 })
 
-var headline = new Vue({
+var headline__one = new Vue({
 	el: '.headline.vue--one',
 	data: {
 		number: 'Nr. 1',
@@ -42,7 +42,7 @@ var headline = new Vue({
 	`
 })
 
-var headline = new Vue({
+var headline__two = new Vue({
 	el: '.headline.vue--two',
 	data: {
 		number: 'Nr. 2',
@@ -56,7 +56,7 @@ var headline = new Vue({
 	`
 })
 
-var headline = new Vue({
+var headline__three = new Vue({
 	el: '.headline.vue--three',
 	data: {
 		number: 'Nr. 3',
@@ -70,7 +70,27 @@ var headline = new Vue({
 	`
 })
 
-
+var aboutme = new Vue({
+	el: '.aboutme',
+	data: {
+		firstname: 'Maurits',
+		surname: 'Brouwer',
+		intro: 'Hi ik ben Maurits Brouwer, een front end developer. Ik maak coole digitale producten en zorg dat de gebruiker altijd de juiste experience heeft.',
+		image: {
+			portret: 'img/Portfolio_Website_Maurits_Brouwer.jpg',
+			signature: 'img/Maurits_Brouwer_Signature.png',
+		},
+	},
+	template: `
+		<div class='aboutme'>
+			<img :src='image.portret' class='aboutme__portret'>
+			<p class="aboutme__firstname">{{ firstname }} </p>
+			<p class="aboutme__surname">{{ surname }} </p>
+			<p class="aboutme__intro"> {{ intro }}</p>
+			<img :src='image.signature' class='aboutme__signature'>
+		</div>
+	`
+})
 
 var footer = new Vue({
 	el: '.footer',

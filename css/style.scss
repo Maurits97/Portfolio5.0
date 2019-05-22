@@ -27,6 +27,7 @@ a {
 	text-transform: uppercase;
 	position: sticky;
 	top: 60px;
+	z-index: 1;
 	
 	.title__name {
 		@include grid-column(4);
@@ -110,23 +111,66 @@ a {
 
 .main {
 	margin-top: 50px;
-}
 
-.headline {
-	border-top: 3px solid $black;
-	padding-top: 10px;
-	font-size: 25px;
+	.headline {
+		border-top: 3px solid $black;
+		padding-top: 10px;
+		margin-bottom: 100px;
+		font-size: 25px;
 
-	.headline__number {
-		@include grid-column(3);
+		.headline__number {
+			@include grid-column(3);
+		}
+
+		.headline__subtext {
+			@include grid-column(9);
+			text-align: right;
+			font-weight: $font-medium;
+		}
 	}
 
-	.headline__subtext {
-		@include grid-column(9);
-		text-align: right;
-		font-weight: $font-medium;
+	.aboutme {
+		position: relative;
+
+		.aboutme__portret {
+			@include grid-shift(1);
+			@include grid-column(7);
+			margin-bottom: 120px;
+		}
+
+		.aboutme__firstname {
+			@include grid-shift(6);
+			position: absolute;
+			top: 150px;
+			font-size: 100px;
+			font-weight: $font-medium;
+		}
+
+		.aboutme__surname {
+			@include grid-shift(6);
+			position: absolute;
+			top: 150px;
+			font-size: 60px;
+			margin-top: 100px;
+			margin-left: 4.5px;
+			font-weight: $font-medium;
+		}
+
+		.aboutme__intro {
+			@include grid-column(3);
+			@include grid-shift(1);
+			margin-top: 200px;
+		}
+
+		.aboutme__signature {
+			@include grid-column(3);
+			@include grid-shift(1);
+			margin-top: 10px;
+		}
 	}
 }
+
+
 
 .footer{
 	@include grid-column(12);

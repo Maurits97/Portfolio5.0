@@ -34,7 +34,8 @@ a {
   font-size: 16px;
   text-transform: uppercase;
   position: sticky;
-  top: 60px; }
+  top: 60px;
+  z-index: 1; }
   .title::after {
     clear: both;
     content: "";
@@ -125,21 +126,60 @@ a {
 
 .main {
   margin-top: 50px; }
-
-.headline {
-  border-top: 3px solid black;
-  padding-top: 10px;
-  font-size: 25px; }
-  .headline .headline__number {
-    width: calc(25% - 25px);
-    float: left;
-    margin-left: 20px; }
-  .headline .headline__subtext {
-    width: calc(75% - 35px);
-    float: left;
-    margin-left: 20px;
-    text-align: right;
-    font-weight: 500; }
+  .main .headline {
+    border-top: 3px solid black;
+    padding-top: 10px;
+    margin-bottom: 100px;
+    font-size: 25px; }
+    .main .headline .headline__number {
+      width: calc(25% - 25px);
+      float: left;
+      margin-left: 20px; }
+    .main .headline .headline__subtext {
+      width: calc(75% - 35px);
+      float: left;
+      margin-left: 20px;
+      text-align: right;
+      font-weight: 500; }
+  .main .aboutme {
+    position: relative; }
+    .main .aboutme .aboutme__portret {
+      left: calc(8.3333333333% - 21.6666666667px + 20px);
+      position: relative;
+      width: calc(58.3333333333% - 31.6666666667px);
+      float: left;
+      margin-left: 20px;
+      margin-bottom: 120px; }
+    .main .aboutme .aboutme__firstname {
+      left: calc(50% - 30px + 20px);
+      position: relative;
+      position: absolute;
+      top: 150px;
+      font-size: 100px;
+      font-weight: 500; }
+    .main .aboutme .aboutme__surname {
+      left: calc(50% - 30px + 20px);
+      position: relative;
+      position: absolute;
+      top: 150px;
+      font-size: 60px;
+      margin-top: 100px;
+      margin-left: 4.5px;
+      font-weight: 500; }
+    .main .aboutme .aboutme__intro {
+      width: calc(25% - 25px);
+      float: left;
+      margin-left: 20px;
+      left: calc(8.3333333333% - 21.6666666667px + 20px);
+      position: relative;
+      margin-top: 200px; }
+    .main .aboutme .aboutme__signature {
+      width: calc(25% - 25px);
+      float: left;
+      margin-left: 20px;
+      left: calc(8.3333333333% - 21.6666666667px + 20px);
+      position: relative;
+      margin-top: 10px; }
 
 .footer {
   width: calc(100% - 40px);
