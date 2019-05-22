@@ -35,16 +35,13 @@ a {
   text-decoration: none; }
 
 .title {
+  width: 100%;
   font-size: 16px;
   text-transform: uppercase;
-  position: sticky;
+  position: fixed;
   top: 60px;
   z-index: 1;
   animation: 1.5s opacity ease-out; }
-  .title::after {
-    clear: both;
-    content: "";
-    display: block; }
   .title .title__name {
     width: calc(33.3333333333% - 26.6666666667px);
     float: left;
