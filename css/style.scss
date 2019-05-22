@@ -152,7 +152,7 @@ a {
 			font-weight: $font-medium;
 
 			@media only screen and (min-width: $desktop-high) {
-				@include grid-column(7);
+				@include grid-column(8);
 			}
 		}
 
@@ -166,7 +166,7 @@ a {
 			font-weight: $font-medium;
 
 			@media only screen and (min-width: $desktop-high) {
-				@include grid-column(7);
+				@include grid-column(8);
 			}
 		}
 
@@ -181,7 +181,6 @@ a {
 
 			@media only screen and (min-width: $desktop-high) {
 				@include grid-column(2);
-				@include grid-shift(1);
 			}
 		}
 
@@ -192,7 +191,6 @@ a {
 
 			@media only screen and (min-width: $desktop-high) {
 				@include grid-column(2);
-				@include grid-shift(1);
 			}
 		}
 	}

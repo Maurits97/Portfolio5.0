@@ -172,7 +172,7 @@ a {
       font-weight: 500; }
       @media only screen and (min-width: 1440px) {
         .main .aboutme .aboutme__firstname {
-          width: calc(58.3333333333% - 31.6666666667px);
+          width: calc(66.6666666667% - 33.3333333333px);
           float: left;
           margin-left: 20px; } }
     .main .aboutme .aboutme__surname {
@@ -186,7 +186,7 @@ a {
       font-weight: 500; }
       @media only screen and (min-width: 1440px) {
         .main .aboutme .aboutme__surname {
-          width: calc(58.3333333333% - 31.6666666667px);
+          width: calc(66.6666666667% - 33.3333333333px);
           float: left;
           margin-left: 20px; } }
     .main .aboutme .aboutme__intro {
@@ -202,9 +202,7 @@ a {
         .main .aboutme .aboutme__intro {
           width: calc(16.6666666667% - 23.3333333333px);
           float: left;
-          margin-left: 20px;
-          left: calc(8.3333333333% - 21.6666666667px + 20px);
-          position: relative; } }
+          margin-left: 20px; } }
     .main .aboutme .aboutme__signature {
       width: calc(25% - 25px);
       float: left;
@@ -216,9 +214,7 @@ a {
         .main .aboutme .aboutme__signature {
           width: calc(16.6666666667% - 23.3333333333px);
           float: left;
-          margin-left: 20px;
-          left: calc(8.3333333333% - 21.6666666667px + 20px);
-          position: relative; } }
+          margin-left: 20px; } }
 
 .footer {
   width: calc(100% - 40px);
