@@ -152,6 +152,8 @@ a {
 			font-weight: $font-medium;
 
 			@media only screen and (min-width: $desktop-high) {
+				@include grid-shift(7);
+				position: absolute;
 			}
 		}
 
@@ -165,6 +167,8 @@ a {
 			font-weight: $font-medium;
 
 			@media only screen and (min-width: $desktop-high) {
+				@include grid-shift(7);
+				position: absolute;
 			}
 		}
 
@@ -174,6 +178,8 @@ a {
 			margin-top: 200px;
 
 			@media only screen and (min-width: $desktop-high) {
+				@include grid-shift(2);
+				@include grid-column(2);
 
 			}
 
@@ -185,6 +191,7 @@ a {
 				@include grid-column(12);
 
 				@media only screen and (min-width: $desktop-high) {
+
 				}
 			}
 		}
