@@ -137,6 +137,11 @@ a {
 			@include grid-shift(1);
 			@include grid-column(7);
 			margin-bottom: 120px;
+
+			@media only screen and (min-width: $desktop-high) {
+				@include grid-shift(2);
+				@include grid-column(6);
+			}
 		}
 
 		.aboutme__firstname {
@@ -145,6 +150,10 @@ a {
 			top: 150px;
 			font-size: 100px;
 			font-weight: $font-medium;
+
+			@media only screen and (min-width: $desktop-high) {
+				@include grid-column(7);
+			}
 		}
 
 		.aboutme__surname {
@@ -155,6 +164,10 @@ a {
 			margin-top: 100px;
 			margin-left: 4.5px;
 			font-weight: $font-medium;
+
+			@media only screen and (min-width: $desktop-high) {
+				@include grid-column(7);
+			}
 		}
 
 		.aboutme__intro {
@@ -165,12 +178,22 @@ a {
 			&--now {
 				margin-top: 10px;
 			}
+
+			@media only screen and (min-width: $desktop-high) {
+				@include grid-column(2);
+				@include grid-shift(1);
+			}
 		}
 
 		.aboutme__signature {
 			@include grid-column(3);
 			@include grid-shift(1);
 			margin-top: 10px;
+
+			@media only screen and (min-width: $desktop-high) {
+				@include grid-column(2);
+				@include grid-shift(1);
+			}
 		}
 	}
 }
