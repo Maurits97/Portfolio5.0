@@ -32,7 +32,7 @@ var headline__one = new Vue({
 	el: '.headline.vue--one',
 	data: {
 		number: 'Nr. 1',
-		subtext: 'Wie is deze jongen?'
+		subtext: 'Wie is deze gast?'
 	},
 	template: `
 		<div class='headline aside--right' data-aos="fade-right" data-aos-duration="1000">
