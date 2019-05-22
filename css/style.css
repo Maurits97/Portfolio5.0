@@ -197,7 +197,7 @@ a {
       position: relative;
       margin-top: 200px; }
       .main .aboutme .aboutme__intro.aboutme__intro--now {
-        margin-top: 20px; }
+        margin-top: 10px; }
       @media only screen and (min-width: 1440px) {
         .main .aboutme .aboutme__intro {
           width: calc(16.6666666667% - 23.3333333333px);
