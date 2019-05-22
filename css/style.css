@@ -173,6 +173,8 @@ a {
       left: calc(8.3333333333% - 21.6666666667px + 20px);
       position: relative;
       margin-top: 200px; }
+      .main .aboutme .aboutme__intro--now {
+        margin-top: 10px; }
     .main .aboutme .aboutme__signature {
       width: calc(25% - 25px);
       float: left;

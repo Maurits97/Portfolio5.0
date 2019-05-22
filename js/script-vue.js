@@ -75,7 +75,8 @@ var aboutme = new Vue({
 	data: {
 		firstname: 'Maurits',
 		surname: 'Brouwer',
-		intro: 'Hi ik ben Maurits Brouwer, een front end developer. Ik maak coole digitale producten en zorg dat de gebruiker altijd de juiste experience heeft.',
+		intro: 'Hi, ik ben Maurits Brouwer, een enthousiaste front end developer met een passie voor web design. Ik maak coole digitale producten en zorg dat de gebruiker altijd de juiste experience heeft.',
+		now: 'Op dit moment zit ik in mijn 3de jaar van de studie Communication & Multimedia Design aan de Haagse Hogeschool.',
 		image: {
 			portret: 'img/Portfolio_Website_Maurits_Brouwer.jpg',
 			signature: 'img/Maurits_Brouwer_Signature.png',
@@ -87,6 +88,7 @@ var aboutme = new Vue({
 			<p class="aboutme__firstname">{{ firstname }} </p>
 			<p class="aboutme__surname">{{ surname }} </p>
 			<p class="aboutme__intro"> {{ intro }}</p>
+			<p class="aboutme__intro aboutme__intro--now"> {{ now }}</p>
 			<img :src='image.signature' class='aboutme__signature'>
 		</div>
 	`

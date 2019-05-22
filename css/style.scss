@@ -160,6 +160,10 @@ a {
 			@include grid-column(3);
 			@include grid-shift(1);
 			margin-top: 200px;
+
+			&--now {
+				margin-top: 10px;
+			}
 		}
 
 		.aboutme__signature {
