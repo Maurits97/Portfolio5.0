@@ -29,8 +29,7 @@
 
 body {
   background-color: #F9F5F1;
-  overflow-x: hidden;
-  min-height: 2000px; }
+  overflow-x: hidden; }
 
 a {
   text-decoration: none; }
@@ -60,10 +59,10 @@ a {
         float: left;
         margin-left: 20px; } }
   .title .title__job {
-    text-align: center;
     width: calc(33.3333333333% - 26.6666666667px);
     float: left;
-    margin-left: 20px; }
+    margin-left: 20px;
+    text-align: center; }
     @media only screen and (max-width: 768px) {
       .title .title__job {
         width: calc(83.3333333333% - 36.6666666667px);
@@ -75,10 +74,10 @@ a {
         position: absolute;
         text-align: left; } }
   .title .title__nav {
-    text-align: right;
     width: calc(25% - 25px);
     float: left;
-    margin-left: 20px; }
+    margin-left: 20px;
+    text-align: right; }
     @media only screen and (max-width: 768px) {
       .title .title__nav {
         width: calc(16.6666666667% - 23.3333333333px);

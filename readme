@@ -9,4 +9,8 @@ Project is using sass/scss.
 
 Personal note:
 cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/Documents/Github/portfolio5.0
+
+TODO
++Intro naam groter (px) voor $desktop-high
++intro tekst kan eventueel wat meer margin-top hebben bij $desktop-high
    
