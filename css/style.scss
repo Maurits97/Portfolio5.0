@@ -152,7 +152,6 @@ a {
 			font-weight: $font-medium;
 
 			@media only screen and (min-width: $desktop-high) {
-				@include grid-column(8);
 			}
 		}
 
@@ -166,7 +165,6 @@ a {
 			font-weight: $font-medium;
 
 			@media only screen and (min-width: $desktop-high) {
-				@include grid-column(8);
 			}
 		}
 
@@ -175,22 +173,19 @@ a {
 			@include grid-shift(1);
 			margin-top: 200px;
 
-			&.aboutme__intro--now {
-				margin-top: 10px;
+			@media only screen and (min-width: $desktop-high) {
+
 			}
 
-			@media only screen and (min-width: $desktop-high) {
-				@include grid-column(2);
+			.aboutme__intro__study {
+				margin-top: 20px;
 			}
-		}
 
-		.aboutme__signature {
-			@include grid-column(3);
-			@include grid-shift(1);
-			margin-top: 10px;
+			.aboutme__intro__signature {
+				@include grid-column(12);
 
-			@media only screen and (min-width: $desktop-high) {
-				@include grid-column(2);
+				@media only screen and (min-width: $desktop-high) {
+				}
 			}
 		}
 	}

@@ -170,11 +170,6 @@ a {
       top: 150px;
       font-size: 100px;
       font-weight: 500; }
-      @media only screen and (min-width: 1440px) {
-        .main .aboutme .aboutme__firstname {
-          width: calc(66.6666666667% - 33.3333333333px);
-          float: left;
-          margin-left: 20px; } }
     .main .aboutme .aboutme__surname {
       left: calc(50% - 30px + 20px);
       position: relative;
@@ -184,11 +179,6 @@ a {
       margin-top: 100px;
       margin-left: 4.5px;
       font-weight: 500; }
-      @media only screen and (min-width: 1440px) {
-        .main .aboutme .aboutme__surname {
-          width: calc(66.6666666667% - 33.3333333333px);
-          float: left;
-          margin-left: 20px; } }
     .main .aboutme .aboutme__intro {
       width: calc(25% - 25px);
       float: left;
@@ -196,25 +186,12 @@ a {
       left: calc(8.3333333333% - 21.6666666667px + 20px);
       position: relative;
       margin-top: 200px; }
-      .main .aboutme .aboutme__intro.aboutme__intro--now {
-        margin-top: 10px; }
-      @media only screen and (min-width: 1440px) {
-        .main .aboutme .aboutme__intro {
-          width: calc(16.6666666667% - 23.3333333333px);
-          float: left;
-          margin-left: 20px; } }
-    .main .aboutme .aboutme__signature {
-      width: calc(25% - 25px);
-      float: left;
-      margin-left: 20px;
-      left: calc(8.3333333333% - 21.6666666667px + 20px);
-      position: relative;
-      margin-top: 10px; }
-      @media only screen and (min-width: 1440px) {
-        .main .aboutme .aboutme__signature {
-          width: calc(16.6666666667% - 23.3333333333px);
-          float: left;
-          margin-left: 20px; } }
+      .main .aboutme .aboutme__intro .aboutme__intro__study {
+        margin-top: 20px; }
+      .main .aboutme .aboutme__intro .aboutme__intro__signature {
+        width: calc(100% - 40px);
+        float: left;
+        margin-left: 20px; }
 
 .footer {
   width: calc(100% - 40px);
