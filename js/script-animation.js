@@ -2,7 +2,6 @@ var header = $('.header');
 var headerNumber = $('.header__number');
 var arrow = $('.arrow');
 
-
 $(window).on('scroll', function() {
    var st = $(this).scrollTop();
    if(st < 180){
