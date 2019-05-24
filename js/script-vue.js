@@ -60,7 +60,7 @@ var headline__three = new Vue({
 	el: '.headline.vue--three',
 	data: {
 		number: 'Nr. 3',
-		subtext: 'Wil jij mij bereiken?'
+		subtext: 'Zo kan jij mij bereiken.'
 	},
 	template: `
 		<div class='headline aside--right' data-aos="fade-right" data-aos-duration="1000">
