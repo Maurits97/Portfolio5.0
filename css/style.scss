@@ -11,7 +11,7 @@
 }
 
 body {
-	// for visual purposes, lets you see the actual
+	//for visual purposes, lets you see the actual
 	// @include grid-visual;
 
 	background-color: $white-yellow;
@@ -55,16 +55,6 @@ a {
 			top: 30px;
 			position: absolute;
 			text-align: left;
-		}
-	}
-
-	.title__nav {
-		@include grid-column(3);
-
-		text-align: right;
-		
-		@media only screen and (max-width: $tablet-max) {
-			@include grid-column(2);
 		}
 	}
 }
@@ -115,6 +105,13 @@ a {
 	width: 100%;
 	text-align: center;
 	animation: arrow 3s infinite;
+
+}
+
+.arrow__circle {
+	transform: rotate(-90deg);
+	font-size: 20px;
+	padding-right: 12px;
 }
 
 .main {
@@ -209,8 +206,54 @@ a {
 			}
 		}
 	}
-}
+	.work {
 
+		.work__item {
+			@include grid-shift(1);
+			@include grid-column(10);
+
+			// @media only screen and (min-width: $desktop-high) {
+				// 	@include grid-shift(2);
+				// 	@include grid-column(9);
+				// }
+			.work__item__image {
+				width: 100%;
+				
+			}
+
+			.work__item__header {
+				margin: 0;
+				padding: 0;
+				font-size: 30px;
+				font-weight: $font-medium;
+				margin-top: 30px;
+				margin-bottom: 40px;
+			}
+
+			.work__item__link {
+				@include grid-column(2);
+				margin-top: -5px;
+				margin-left: -3px;
+				font-size: 10px;
+
+			}
+
+			.work__item__text {
+				@include grid-column(7);
+				margin-left: 41px;
+				height: 200px;
+			}
+
+			.work__item__underline {
+				@include grid-shift(2);
+				@include grid-column(10);
+
+				border-bottom: 3px solid $black;
+				margin-bottom: 200px;
+			}
+		}
+	}
+}
 
 
 .footer{

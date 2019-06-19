@@ -9,7 +9,6 @@ var title = new Vue({
 				{{ name }}
 			</p>
 			<p class='title__job'>Front end developer</p>
-			<div class='title__nav'>nav</div>
 		</div>
 	`
 })
@@ -35,7 +34,7 @@ var headline__one = new Vue({
 		subtext: 'Hello, world!'
 	},
 	template: `
-		<div class='headline aside--right' data-aos="fade-right" data-aos-duration="1000">
+		<div class='headline aside--right' data-aos="fade-left" data-aos-duration="1000">
 			<p class='headline__number'>{{ number }}</p>
 			<p class='headline__subtext'>{{ subtext }}</p>
 		</div>
@@ -49,7 +48,7 @@ var headline__two = new Vue({
 		subtext: 'Dit heb ik gemaakt.'
 	},
 	template: `
-		<div class='headline aside--left' data-aos="fade-left" data-aos-duration="1000">
+		<div class='headline aside--left' data-aos="fade-right" data-aos-duration="1000">
 			<p class='headline__number'>{{ number }}</p>
 			<p class='headline__subtext'>{{ subtext }}</p>
 		</div>
@@ -63,7 +62,7 @@ var headline__three = new Vue({
 		subtext: 'Zo kan jij mij bereiken.'
 	},
 	template: `
-		<div class='headline aside--right' data-aos="fade-right" data-aos-duration="1000">
+		<div class='headline aside--right' data-aos="fade-left" data-aos-duration="1000">
 			<p class='headline__number'>{{ number }}</p>
 			<p class='headline__subtext'>{{ subtext }}</p>
 		</div>
@@ -92,6 +91,47 @@ var aboutme = new Vue({
 				<p class="aboutme__intro__study"> {{ study }}</p>
 				<img :src='image.signature' class='aboutme__intro__signature' data-aos="fade-up"/>
 			</div
+		</div>
+	`
+})
+
+var work = new Vue({
+	el: '.work',
+	data: {
+		item_1: {
+			image: 'img/Maurits_Brouwer_Item_Portfolio_Website1.png',
+			link: 'https://oud.mauritsbrouwer.nl',
+			header: 'Portfolio Website 1.0',
+			text: 'Mijn allereerste programmeer project was mijn eerste portfolio website. Deze heb ik gemaakt voor een projectvak tijdens mijn eerste jaar van mijn studie. Hoewel er veel techniek ontbrak was ik er erg trots op. Zo is de website niet responsive en vind ik hem inhoudelijk niet erg sterk. Kortom: een leuke ervaring om iets beters in de toekomst te maken. ',
+		},
+		item_2: {
+			image: 'img/Maurits_Brouwer_Item_Dept.jpg',
+			link: 'https://maurits97.github.io/DeptOpdracht/assets/index.html',
+			header: 'Fictieve opdracht: Dept Agency',
+			text: 'Tijdens het zoeken van een stageplek, heb ik het ook bij Dept Agency geprobeerd. Ook hierbij kreeg ik een fictieve opdracht zodat zij inzicht konden krijgen wat mijn huidige skills waren. Van deze opdracht heb ik wel erg veel van geleerd. Niet alleen heb ik kennis gemaakt met technieken zoals Gulp en Sass. Ook ben ik erachter gekomen dat mijn niveau verbeterd kan worden en ik dus nog veel kan leren. Mijn studie (Communication And Multimedia Design) heeft wel front-end vakken, maar is niet 100% hierop gericht.',
+		},
+	},
+	template: `
+		<div class='work'>
+			<div class="work__item">
+				<a :href='item_1.link' target='blank'><img :src='item_1.image' class="work__item__image" /></a>
+				<h3 class='work__item__header'> {{ item_1.header}} </h3>
+				<div class='work__item__link'>
+					<a :href='item_1.link' target='blank' ><i class="arrow__circle material-icons-outlined">arrow_drop_down_circle</i>Ga naar..</a>
+				</div>
+				<p class='work__item__text'> {{ item_1.text }}</p>
+				<div class='work__item__underline'></div>
+			</div>
+
+			<div class="work__item">
+				<a :href='item_2.link' target='blank'><img :src='item_2.image' class="work__item__image" /></a>
+				<h3 class='work__item__header'> {{ item_2.header}} </h3>
+				<div class='work__item__link'>
+					<a :href='item_2.link' target='blank' ><i class="arrow__circle material-icons-outlined">arrow_drop_down_circle</i>Ga naar..</a>
+				</div>
+				<p class='work__item__text'> {{ item_2.text }}</p>
+				<div class='work__item__underline'></div>
+			</div>
 		</div>
 	`
 })
