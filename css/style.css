@@ -28,6 +28,7 @@
   letter-spacing: normal; }
 
 body {
+  background-image: repeating-linear-gradient(to right, transparent, transparent 20px, rgba(0, 212, 255, 0.25) 20px, rgba(0, 212, 255, 0.25) calc(8.3333333333% - 21.6666666667px + 20px));
   background-color: #F9F5F1;
   overflow-x: hidden;
   position: relative; }
@@ -250,6 +251,7 @@ a {
   font-weight: 500;
   justify-content: space-between;
   margin-top: 800px;
+  margin-bottom: 20px;
   padding-top: 10px; }
   @media only screen and (min-width: 1440px) {
     .footer {

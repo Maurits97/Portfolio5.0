@@ -12,7 +12,7 @@
 
 body {
 	//for visual purposes, lets you see the actual
-	// @include grid-visual;
+	@include grid-visual;
 
 	background-color: $white-yellow;
 	overflow-x: hidden;
@@ -80,6 +80,12 @@ a {
 			font-size: 600px;
 		}
 
+		// @media only screen and (max-width: $tablet-max) {
+		// 	font-size: 250px;
+		// 	margin-top: 200px;
+		// 	margin-left: 0px;
+		// }
+
 		&:after {
 			content: '';
 			position: absolute;
@@ -101,13 +107,13 @@ a {
 		}
 	}
 }
+
 .arrow {
 	margin-top: calc(89vh);
 	font-size: 50px !important;
 	width: 100%;
 	text-align: center;
 	animation: arrow 3s infinite;
-
 }
 
 .arrow__circle {
@@ -218,6 +224,7 @@ a {
 				// 	@include grid-shift(2);
 				// 	@include grid-column(9);
 				// }
+				
 			.work__item__image {
 				width: 100%;
 				
@@ -268,6 +275,7 @@ a {
 	font-weight: $font-medium;
 	justify-content: space-between;
 	margin-top: 800px;
+	margin-bottom: 20px;
 	padding-top: 10px;
 
 	@media only screen and (min-width: $desktop-high) {
