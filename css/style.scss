@@ -41,7 +41,7 @@ a {
 		margin-top: -4px;
 
 		@media only screen and (min-width: $desktop-high) {
-			font-size: 25px;
+			font-size: 30px;
 		}
 
 		@media only screen and (max-width: $tablet-max) {
@@ -55,7 +55,7 @@ a {
 		text-align: center;
 
 		@media only screen and (min-width: $desktop-high) {
-			font-size: 22px;
+			font-size: 21px;
 		}
 		
 		@media only screen and (max-width: $tablet-max) {
@@ -86,13 +86,8 @@ a {
 
 		@media only screen and (min-width: $desktop-high) {
 			font-size: 600px;
+			margin-top: 200px;
 		}
-
-		// @media only screen and (max-width: $tablet-max) {
-		// 	font-size: 250px;
-		// 	margin-top: 200px;
-		// 	margin-left: 0px;
-		// }
 
 		&:after {
 			content: '';
@@ -128,6 +123,10 @@ a {
 	transform: rotate(-90deg);
 	font-size: 20px;
 	padding-right: 12px;
+
+	@media only screen and (min-width: $desktop-high) {
+		padding-right: 9px;
+	}
 }
 
 .main {
@@ -138,6 +137,10 @@ a {
 		padding-top: 10px;
 		margin-bottom: 100px;
 		font-size: 25px;
+
+		@media only screen and (min-width: $desktop-high) {
+			font-size: 30px;
+		}
 
 		.headline__number {
 			@include grid-column(3);
@@ -197,7 +200,7 @@ a {
 
 				position: absolute;
 				font-size: 80px;
-				margin-top: 115px;
+				margin-top: 125px;
 			}
 		}
 
@@ -212,7 +215,7 @@ a {
 				@include grid-column(2);
 
 				font-size: 20px;
-				margin-top: 230px;
+				margin-top: 260px;
 			}
 
 			.aboutme__intro__study {
@@ -251,19 +254,35 @@ a {
 				font-weight: $font-medium;
 				margin-top: 30px;
 				margin-bottom: 40px;
+
+				@media only screen and (min-width: $desktop-high) {
+					font-size: 35px;
+				}
 			}
 
 			.work__item__link {
 				@include grid-column(2);
+
 				margin-top: -5px;
 				margin-left: -3px;
 				font-size: 10px;
+
+				@media only screen and (min-width: $desktop-high) {
+					@include grid-column(1);
+
+					font-size: 15px;
+				}
 			}
 
 			.work__item__text {
 				@include grid-column(7);
+
 				margin-left: 41px;
 				margin-bottom: 80px;
+
+				@media only screen and (min-width: $desktop-high) {
+					@include grid-column(6);
+				}
 			}
 
 			.work__item__underline {
@@ -272,6 +291,10 @@ a {
 
 				border-bottom: 3px solid $black;
 				margin-bottom: 200px;
+
+				@media only screen and (min-width: $desktop-high) {
+					@include grid-column(9);
+				}
 			}
 		}
 	}
