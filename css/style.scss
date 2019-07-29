@@ -170,6 +170,7 @@ a {
 				@include grid-shift(7);
 
 				position: absolute;
+				font-size: 130px;
 			}
 		}
 
@@ -187,6 +188,8 @@ a {
 				@include grid-shift(7);
 
 				position: absolute;
+				font-size: 80px;
+				margin-top: 115px;
 			}
 		}
 
@@ -199,6 +202,9 @@ a {
 			@media only screen and (min-width: $desktop-high) {
 				@include grid-shift(2);
 				@include grid-column(2);
+
+				font-size: 20px;
+				margin-top: 230px;
 			}
 
 			.aboutme__intro__study {

@@ -1,7 +1,6 @@
 var headerNumber = $('.header__number');
 var header = $('.header');
 var arrow = $('.arrow');
-console.log($(document).width());
 
 $(window).on('scroll', function() {
    var st = $(this).scrollTop();
