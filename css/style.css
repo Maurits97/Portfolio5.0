@@ -230,7 +230,7 @@ a {
       float: left;
       margin-left: 20px;
       margin-left: 41px;
-      height: 200px; }
+      margin-bottom: 80px; }
     .main .work .work__item .work__item__underline {
       left: calc(16.6666666667% - 23.3333333333px + 20px);
       position: relative;

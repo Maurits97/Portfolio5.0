@@ -102,13 +102,13 @@ var work = new Vue({
 			image: 'img/Maurits_Brouwer_Item_Portfolio_Website1.png',
 			link: 'https://oud.mauritsbrouwer.nl',
 			header: 'Portfolio Website 1.0',
-			text: 'Mijn allereerste programmeer project was mijn eerste portfolio website. Deze heb ik gemaakt voor een projectvak tijdens mijn eerste jaar van mijn studie. Hoewel er veel techniek ontbrak was ik er erg trots op. Zo is de website niet responsive en vind ik hem inhoudelijk niet erg sterk. Kortom: een leuke ervaring om iets beters in de toekomst te maken. ',
+			text: 'Mijn allereerste programmeer project was mijn eerste portfolio website. Deze heb ik gemaakt voor een projectvak tijdens mijn eerste jaar van mijn studie. Hoewel er veel techniek ontbrak was ik er erg trots op. Zo is de website niet responsive en vind ik hem inhoudelijk niet erg sterk. Wel was ik trots op het gebruik van het parallax effect. Kortom: een leuke ervaring om op terug te kijken.',
 		},
 		item_2: {
 			image: 'img/Maurits_Brouwer_Item_Dept.jpg',
 			link: 'https://maurits97.github.io/DeptOpdracht/assets/index.html',
 			header: 'Fictieve opdracht: Dept Agency',
-			text: 'Tijdens het zoeken van een stageplek, heb ik het ook bij Dept Agency geprobeerd. Ook hierbij kreeg ik een fictieve opdracht zodat zij inzicht konden krijgen wat mijn huidige skills waren. Van deze opdracht heb ik wel erg veel van geleerd. Niet alleen heb ik kennis gemaakt met technieken zoals Gulp en Sass. Ook ben ik erachter gekomen dat mijn niveau verbeterd kan worden en ik dus nog veel kan leren. Mijn studie (Communication And Multimedia Design) heeft wel front-end vakken, maar is niet 100% hierop gericht.',
+			text: 'Tijdens het zoeken van een stageplek, heb ik het ook bij Dept Agency geprobeerd. Ook hierbij kreeg ik een fictieve opdracht zodat zij inzicht konden krijgen wat mijn huidige skills waren. Van deze opdracht heb ik wel erg veel van geleerd. Niet alleen heb ik kennis gemaakt met technieken zoals Gulp en Sass.',
 		},
 	},
 	template: `
