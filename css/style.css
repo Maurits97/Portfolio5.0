@@ -53,6 +53,9 @@ a {
     position: relative;
     font-size: 21px;
     margin-top: -4px; }
+    @media only screen and (min-width: 1440px) {
+      .title .title__name {
+        font-size: 25px; } }
     @media only screen and (max-width: 768px) {
       .title .title__name {
         width: calc(83.3333333333% - 36.6666666667px);
@@ -63,6 +66,9 @@ a {
     float: left;
     margin-left: 20px;
     text-align: center; }
+    @media only screen and (min-width: 1440px) {
+      .title .title__job {
+        font-size: 22px; } }
     @media only screen and (max-width: 768px) {
       .title .title__job {
         width: calc(83.3333333333% - 36.6666666667px);
@@ -168,7 +174,8 @@ a {
         .main .aboutme .aboutme__firstname {
           left: calc(58.3333333333% - 31.6666666667px + 20px);
           position: relative;
-          position: absolute; } }
+          position: absolute;
+          font-size: 130px; } }
     .main .aboutme .aboutme__surname {
       left: calc(50% - 30px + 20px);
       position: relative;
@@ -182,7 +189,9 @@ a {
         .main .aboutme .aboutme__surname {
           left: calc(58.3333333333% - 31.6666666667px + 20px);
           position: relative;
-          position: absolute; } }
+          position: absolute;
+          font-size: 80px;
+          margin-top: 115px; } }
     .main .aboutme .aboutme__intro {
       width: calc(25% - 25px);
       float: left;
@@ -196,7 +205,9 @@ a {
           position: relative;
           width: calc(16.6666666667% - 23.3333333333px);
           float: left;
-          margin-left: 20px; } }
+          margin-left: 20px;
+          font-size: 20px;
+          margin-top: 230px; } }
       .main .aboutme .aboutme__intro .aboutme__intro__study {
         margin-top: 20px; }
       .main .aboutme .aboutme__intro .aboutme__intro__signature {

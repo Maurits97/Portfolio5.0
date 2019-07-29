@@ -40,6 +40,10 @@ a {
 		font-size: 21px;
 		margin-top: -4px;
 
+		@media only screen and (min-width: $desktop-high) {
+			font-size: 25px;
+		}
+
 		@media only screen and (max-width: $tablet-max) {
 			@include grid-column(10);
 		}
@@ -49,6 +53,10 @@ a {
 		@include grid-column(4);
 
 		text-align: center;
+
+		@media only screen and (min-width: $desktop-high) {
+			font-size: 22px;
+		}
 		
 		@media only screen and (max-width: $tablet-max) {
 			@include grid-column(10);
