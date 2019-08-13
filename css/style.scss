@@ -12,7 +12,7 @@
 
 body {
 	//for visual purposes, lets you see the actual
-	@include grid-visual;
+	// @include grid-visual;
 
 	background-color: $white-yellow;
 	overflow-x: hidden;
@@ -41,7 +41,7 @@ a {
 		margin-top: -4px;
 
 		@media only screen and (min-width: $desktop-high) {
-			font-size: 30px;
+			font-size: 28px;
 		}
 
 		@media only screen and (max-width: $tablet-max) {
@@ -84,6 +84,12 @@ a {
 		font-size: 450px;
 		font-weight: $font-bold;
 
+		@media only screen and (max-width: $tablet-max) {
+			margin-top: 300px;
+			font-size: 280px;
+			margin-left: 0px;
+		}
+
 		@media only screen and (min-width: $desktop-high) {
 			font-size: 600px;
 			margin-top: 200px;
@@ -99,6 +105,10 @@ a {
 			background-color: black;
 			transform: skew(-23.5deg, 0deg);
 			animation: firstload 1s ease-out;
+
+			@media only screen and (max-width: $tablet-max) {
+				display: none;
+			}
 
 			@media only screen and (min-width: $desktop-high) {
 				top: 224px;
@@ -134,6 +144,7 @@ a {
 
 	.headline {
 		border-top: 3px solid $black;
+		margin-top: 100px;
 		padding-top: 10px;
 		margin-bottom: 100px;
 		font-size: 25px;
@@ -173,7 +184,7 @@ a {
 			@include grid-shift(6);
 
 			position: absolute;
-			top: 150px;
+			top: 250px;
 			font-size: 100px;
 			font-weight: $font-medium;
 
@@ -189,7 +200,7 @@ a {
 			@include grid-shift(6);
 
 			position: absolute;
-			top: 150px;
+			top: 250px;
 			font-size: 60px;
 			margin-top: 100px;
 			margin-left: 4.5px;
@@ -237,14 +248,13 @@ a {
 			@include grid-shift(1);
 			@include grid-column(10);
 
-			// @media only screen and (min-width: $desktop-high) {
-				// 	@include grid-shift(2);
-				// 	@include grid-column(9);
-				// }
+			@media only screen and (min-width: $desktop-high) {
+					@include grid-shift(2);
+					@include grid-column(8);
+				}
 				
 			.work__item__image {
 				width: 100%;
-				
 			}
 
 			.work__item__header {
@@ -268,8 +278,6 @@ a {
 				font-size: 10px;
 
 				@media only screen and (min-width: $desktop-high) {
-					@include grid-column(1);
-
 					font-size: 15px;
 				}
 			}
@@ -279,10 +287,6 @@ a {
 
 				margin-left: 41px;
 				margin-bottom: 80px;
-
-				@media only screen and (min-width: $desktop-high) {
-					@include grid-column(6);
-				}
 			}
 
 			.work__item__underline {
@@ -291,10 +295,6 @@ a {
 
 				border-bottom: 3px solid $black;
 				margin-bottom: 200px;
-
-				@media only screen and (min-width: $desktop-high) {
-					@include grid-column(9);
-				}
 			}
 		}
 	}

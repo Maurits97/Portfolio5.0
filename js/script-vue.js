@@ -34,7 +34,7 @@ var headline__one = new Vue({
 		subtext: 'Hello, world!'
 	},
 	template: `
-		<div class='headline aside--right' data-aos="fade-down">
+		<div class='headline aside--right' data-aos="fade-up">
 			<p class='headline__number'>{{ number }}</p>
 			<p class='headline__subtext'>{{ subtext }}</p>
 		</div>
@@ -48,7 +48,7 @@ var headline__two = new Vue({
 		subtext: 'Dit heb ik gemaakt.'
 	},
 	template: `
-		<div class='headline aside--left' data-aos="fade-down">
+		<div class='headline aside--left' data-aos="fade-up">
 			<p class='headline__number'>{{ number }}</p>
 			<p class='headline__subtext'>{{ subtext }}</p>
 		</div>
@@ -62,7 +62,7 @@ var headline__three = new Vue({
 		subtext: 'Zo kan jij mij bereiken.'
 	},
 	template: `
-		<div class='headline aside--right' data-aos="fade-down">
+		<div class='headline aside--right' data-aos="fade-up">
 			<p class='headline__number'>{{ number }}</p>
 			<p class='headline__subtext'>{{ subtext }}</p>
 		</div>
