@@ -126,21 +126,6 @@ a {
           height: 357px;
           animation: firstload--high 1s ease-out; } }
 
-.arrow {
-  margin-top: calc(89vh);
-  font-size: 50px !important;
-  width: 100%;
-  text-align: center;
-  animation: arrow 3s infinite; }
-
-.arrow__circle {
-  transform: rotate(-90deg);
-  font-size: 20px;
-  padding-right: 12px; }
-  @media only screen and (min-width: 1440px) {
-    .arrow__circle {
-      padding-right: 9px; } }
-
 .main {
   margin-top: 50px; }
   .main .headline {
@@ -156,12 +141,24 @@ a {
       width: calc(25% - 25px);
       float: left;
       margin-left: 20px; }
+      @media only screen and (max-width: 768px) {
+        .main .headline .headline__number {
+          width: calc(33.3333333333% - 26.6666666667px);
+          float: left;
+          margin-left: 20px;
+          font-size: 20px; } }
     .main .headline .headline__subtext {
       width: calc(75% - 35px);
       float: left;
       margin-left: 20px;
       text-align: right;
       font-weight: 500; }
+      @media only screen and (max-width: 768px) {
+        .main .headline .headline__subtext {
+          width: calc(66.6666666667% - 33.3333333333px);
+          float: left;
+          margin-left: 20px;
+          font-size: 20px; } }
   .main .aboutme {
     position: relative; }
     .main .aboutme .aboutme__portret {
@@ -171,6 +168,13 @@ a {
       float: left;
       margin-left: 20px;
       margin-bottom: 120px; }
+      @media only screen and (max-width: 768px) {
+        .main .aboutme .aboutme__portret {
+          width: calc(91.6666666667% - 38.3333333333px);
+          float: left;
+          margin-left: 20px;
+          margin-bottom: 0px;
+          margin-top: 50px; } }
       @media only screen and (min-width: 1440px) {
         .main .aboutme .aboutme__portret {
           left: calc(16.6666666667% - 23.3333333333px + 20px);
@@ -185,6 +189,11 @@ a {
       top: 250px;
       font-size: 100px;
       font-weight: 500; }
+      @media only screen and (max-width: 768px) {
+        .main .aboutme .aboutme__firstname {
+          font-size: 70px;
+          top: 219px;
+          left: 52px; } }
       @media only screen and (min-width: 1440px) {
         .main .aboutme .aboutme__firstname {
           left: calc(58.3333333333% - 31.6666666667px + 20px);
@@ -200,6 +209,11 @@ a {
       margin-top: 100px;
       margin-left: 4.5px;
       font-weight: 500; }
+      @media only screen and (max-width: 768px) {
+        .main .aboutme .aboutme__surname {
+          font-size: 50px;
+          top: 190px;
+          left: 50px; } }
       @media only screen and (min-width: 1440px) {
         .main .aboutme .aboutme__surname {
           left: calc(58.3333333333% - 31.6666666667px + 20px);
@@ -214,6 +228,12 @@ a {
       left: calc(8.3333333333% - 21.6666666667px + 20px);
       position: relative;
       margin-top: 200px; }
+      @media only screen and (max-width: 768px) {
+        .main .aboutme .aboutme__intro {
+          width: calc(91.6666666667% - 38.3333333333px);
+          float: left;
+          margin-left: 20px;
+          margin-top: 50px; } }
       @media only screen and (min-width: 1440px) {
         .main .aboutme .aboutme__intro {
           left: calc(16.6666666667% - 23.3333333333px + 20px);
@@ -229,6 +249,11 @@ a {
         width: calc(100% - 40px);
         float: left;
         margin-left: 20px; }
+        @media only screen and (max-width: 768px) {
+          .main .aboutme .aboutme__intro .aboutme__intro__signature {
+            width: calc(83.3333333333% - 36.6666666667px);
+            float: left;
+            margin-left: 20px; } }
   .main .work .work__item {
     left: calc(8.3333333333% - 21.6666666667px + 20px);
     position: relative;
@@ -300,10 +325,30 @@ a {
       left: calc(8.3333333333% - 21.6666666667px + 20px);
       position: relative; } }
 
+.arrow {
+  margin-top: calc(89vh);
+  font-size: 50px !important;
+  width: 100%;
+  text-align: center;
+  animation: arrow 3s infinite; }
+
+.arrow__circle {
+  transform: rotate(-90deg);
+  font-size: 20px;
+  padding-right: 12px; }
+  @media only screen and (min-width: 1440px) {
+    .arrow__circle {
+      padding-right: 9px; } }
+
 .aside--left {
   width: calc(58.3333333333% - 31.6666666667px);
   float: left;
   margin-left: 20px; }
+  @media only screen and (max-width: 768px) {
+    .aside--left {
+      width: calc(83.3333333333% - 36.6666666667px);
+      float: left;
+      margin-left: 20px; } }
   @media only screen and (min-width: 1440px) {
     .aside--left {
       left: calc(8.3333333333% - 21.6666666667px + 20px);
@@ -315,6 +360,13 @@ a {
   margin-left: 20px;
   left: calc(41.6666666667% - 28.3333333333px + 20px);
   position: relative; }
+  @media only screen and (max-width: 768px) {
+    .aside--right {
+      width: calc(83.3333333333% - 36.6666666667px);
+      float: left;
+      margin-left: 20px;
+      left: calc(16.6666666667% - 23.3333333333px + 20px);
+      position: relative; } }
   @media only screen and (min-width: 1440px) {
     .aside--right {
       left: calc(33.3333333333% - 26.6666666667px + 20px);

@@ -121,24 +121,6 @@ a {
 	}
 }
 
-.arrow {
-	margin-top: calc(89vh);
-	font-size: 50px !important;
-	width: 100%;
-	text-align: center;
-	animation: arrow 3s infinite;
-}
-
-.arrow__circle {
-	transform: rotate(-90deg);
-	font-size: 20px;
-	padding-right: 12px;
-
-	@media only screen and (min-width: $desktop-high) {
-		padding-right: 9px;
-	}
-}
-
 .main {
 	margin-top: 50px;
 
@@ -155,6 +137,12 @@ a {
 
 		.headline__number {
 			@include grid-column(3);
+
+			@media only screen and (max-width: $tablet-max) {
+				@include grid-column(4);
+
+				font-size: 20px;
+			}
 		}
 
 		.headline__subtext {
@@ -162,6 +150,12 @@ a {
 
 			text-align: right;
 			font-weight: $font-medium;
+
+			@media only screen and (max-width: $tablet-max) {
+				@include grid-column(8);
+
+				font-size: 20px;
+			}
 		}
 	}
 
@@ -173,6 +167,13 @@ a {
 			@include grid-column(7);
 
 			margin-bottom: 120px;
+
+			@media only screen and (max-width: $tablet-max) {
+				@include grid-column(11);
+
+				margin-bottom: 0px;
+				margin-top: 50px;
+			}
 
 			@media only screen and (min-width: $desktop-high) {
 				@include grid-shift(2);
@@ -187,6 +188,12 @@ a {
 			top: 250px;
 			font-size: 100px;
 			font-weight: $font-medium;
+
+			@media only screen and (max-width: $tablet-max) {
+				font-size: 70px;
+				top: 219px;
+				left: 52px;
+			}
 
 			@media only screen and (min-width: $desktop-high) {
 				@include grid-shift(7);
@@ -206,6 +213,12 @@ a {
 			margin-left: 4.5px;
 			font-weight: $font-medium;
 
+			@media only screen and (max-width: $tablet-max) {
+				font-size: 50px;
+				top: 190px;
+				left: 50px;
+			}
+
 			@media only screen and (min-width: $desktop-high) {
 				@include grid-shift(7);
 
@@ -220,6 +233,12 @@ a {
 			@include grid-shift(1);
 
 			margin-top: 200px;
+
+			@media only screen and (max-width: $tablet-max) {
+				@include grid-column(11);
+
+				margin-top: 50px;
+			}
 
 			@media only screen and (min-width: $desktop-high) {
 				@include grid-shift(2);
@@ -236,8 +255,8 @@ a {
 			.aboutme__intro__signature {
 				@include grid-column(12);
 
-				@media only screen and (min-width: $desktop-high) {
-
+				@media only screen and (max-width: $tablet-max) {
+					@include grid-column(10);
 				}
 			}
 		}
@@ -300,7 +319,6 @@ a {
 	}
 }
 
-
 .footer{
 	@include grid-column(12);
 
@@ -318,10 +336,34 @@ a {
 		@include grid-column(10);
 		@include grid-shift(1);
 	}
-
 }
+
+//arrow styling
+.arrow {
+	margin-top: calc(89vh);
+	font-size: 50px !important;
+	width: 100%;
+	text-align: center;
+	animation: arrow 3s infinite;
+}
+
+.arrow__circle {
+	transform: rotate(-90deg);
+	font-size: 20px;
+	padding-right: 12px;
+
+	@media only screen and (min-width: $desktop-high) {
+		padding-right: 9px;
+	}
+}
+
+//header alignment
 .aside--left {
 	@include grid-column(7);
+
+	@media only screen and (max-width: $tablet-max) {
+		@include grid-column(10);
+	}
 
 	@media only screen and (min-width: $desktop-high) {
 		@include grid-shift(1);
@@ -331,6 +373,11 @@ a {
 .aside--right {
 	@include grid-column(7);
 	@include grid-shift(5);
+
+	@media only screen and (max-width: $tablet-max) {
+		@include grid-column(10);
+		@include grid-shift(2);
+	}
 
 	@media only screen and (min-width: $desktop-high) {
 		@include grid-shift(4);
