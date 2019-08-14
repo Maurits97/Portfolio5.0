@@ -284,6 +284,12 @@ a {
 				margin-top: 30px;
 				margin-bottom: 40px;
 
+				@media only screen and (max-width: $tablet-max) {
+					margin-top: 10px;
+					margin-bottom: 10px;
+					font-size: 20px;
+				}
+
 				@media only screen and (min-width: $desktop-high) {
 					font-size: 35px;
 				}
@@ -296,6 +302,12 @@ a {
 				margin-left: -3px;
 				font-size: 10px;
 
+				@media only screen and (max-width: $tablet-max) {
+					@include grid-column(6);
+					margin-left: -5px;
+					margin-bottom: 30px;
+				}
+
 				@media only screen and (min-width: $desktop-high) {
 					font-size: 15px;
 				}
@@ -306,6 +318,10 @@ a {
 
 				margin-left: 41px;
 				margin-bottom: 80px;
+
+				@media only screen and (max-width: $tablet-max) {
+					@include grid-column(12);
+				}
 			}
 
 			.work__item__underline {
@@ -314,6 +330,11 @@ a {
 
 				border-bottom: 3px solid $black;
 				margin-bottom: 200px;
+
+				@media only screen and (max-width: $tablet-max) {
+					@include grid-shift(0);
+					@include grid-column(12);
+				}
 			}
 		}
 	}
