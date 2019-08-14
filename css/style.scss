@@ -267,10 +267,14 @@ a {
 			@include grid-shift(1);
 			@include grid-column(10);
 
+			@media only screen and (max-width: $tablet-max) {
+				@include grid-column(11);
+			}
+
 			@media only screen and (min-width: $desktop-high) {
-					@include grid-shift(2);
-					@include grid-column(8);
-				}
+				@include grid-shift(2);
+				@include grid-column(8);
+			}
 				
 			.work__item__image {
 				width: 100%;
