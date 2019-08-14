@@ -32,6 +32,10 @@ a {
 	top: 60px;
 	z-index: 1;
 	animation: 1.5s opacity ease-out;
+
+	@media only screen and (max-width: $tablet-max) {
+		top: 40px;
+	}
 	
 	.title__name {
 		@include grid-column(4);
@@ -46,6 +50,7 @@ a {
 
 		@media only screen and (max-width: $tablet-max) {
 			@include grid-column(10);
+
 		}
 	}
 
