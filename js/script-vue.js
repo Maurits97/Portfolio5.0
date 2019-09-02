@@ -144,7 +144,7 @@ var footer = new Vue({
 			email: 'MauritsBrouwer@outlook.com' ,
 			phone: '+ 06 57276646',
 			other: {
-				title: 'of neem een kijkje op mijn…',
+				title: 'Of neem een kijkje op mijn…',
 				linkedin: 'Linkedin',
 				instagram: 'Instagram',
 				twitter: 'Twitter',
