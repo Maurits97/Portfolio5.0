@@ -75,7 +75,7 @@ var aboutme = new Vue({
 		firstname: 'Maurits',
 		surname: 'Brouwer',
 		intro: 'Hi, ik ben Maurits Brouwer, een enthousiaste front end developer met een passie voor web design. Ik maak coole digitale producten en zorg dat de gebruiker altijd de juiste experience heeft.',
-		study: 'Op dit moment zit ik in mijn 3de jaar van de studie Communication & Multimedia Design aan de Haagse Hogeschool.',
+		study: 'Op dit moment zit ik in mijn 4de jaar van de studie Communication & Multimedia Design aan de Haagse Hogeschool.',
 		image: {
 			portret: 'img/Portfolio_Website_Maurits_Brouwer.jpg',
 			signature: 'img/Maurits_Brouwer_Signature_Web.png',
@@ -108,7 +108,7 @@ var work = new Vue({
 			image: 'img/Maurits_Brouwer_Item_Dept.jpg',
 			link: 'https://maurits97.github.io/DeptOpdracht/assets/index.html',
 			header: 'Fictieve opdracht: Dept Agency',
-			text: 'Tijdens het zoeken van een stageplek, heb ik het ook bij Dept Agency geprobeerd. Ook hierbij kreeg ik een fictieve opdracht zodat zij inzicht konden krijgen wat mijn huidige skills waren. Van deze opdracht heb ik wel erg veel van geleerd. Niet alleen heb ik kennis gemaakt met technieken zoals Gulp en Sass.',
+			text: 'Tijdens het zoeken van een stageplek, heb ik het ook bij Dept Agency geprobeerd. Ook hierbij kreeg ik een fictieve opdracht zodat zij inzicht konden krijgen wat mijn huidige skills waren. Van deze opdracht heb ik erg veel van geleerd. Ik maakte hierbij kennis met technieken zoals Gulp en Sass.',
 		},
 	},
 	template: `
@@ -137,6 +137,43 @@ var work = new Vue({
 })
 
 var footer = new Vue({
+	el: '.contact',
+	data: {
+		header: 'Zo kan je mij contacteren.',
+		credentials: {
+			email: 'MauritsBrouwer@outlook.com' ,
+			phone: '+ 06 57276646',
+			other: {
+				title: 'of neem een kijkje op mijn…',
+				linkedin: 'Linkedin',
+				instagram: 'Instagram',
+				twitter: 'Twitter',
+			},
+		},
+	},
+	template: `
+		<div class='contact'>
+			<h1 class='contact__header'>
+				{{ header }}
+			</h1>
+			<p class='contact__credentials'>
+				{{ credentials.email }}
+			</p>
+			<p class='contact__credentials'>
+				{{ credentials.phone }}
+			</p>
+
+			<div class='contact__other'>
+				<h3 class='contact__other__title'> {{ credentials.other.title }} </h3>
+				<a href='https://www.linkedin.com/in/mauritsbrouwer/' target='_blank'><p class='contact__other__linkedin'> {{ credentials.other.linkedin }} </a>
+				<a href='https://www.instagram.com/mundakka97/' target='_blank'><p class='contact__other__instagram'> {{ credentials.other.instagram }} </a>
+				<a href='https://twitter.com/maui12354' target='_blank'><p class='contact__other__twitter'> {{ credentials.other.twitter }} </a>
+			</p>
+		</div>
+	`
+})
+
+var footer = new Vue({
 	el: '.footer',
 	data: {
 		name: 'Maurits Brouwer',
@@ -153,71 +190,3 @@ var footer = new Vue({
 		</div>
 	`
 })
-
-// var navigation = new Vue({
-// 	el: '.nav',
-// 	data: {
-// 		name: 'Maurits Brouwer',
-// 	},
-// 	template: `
-// 		<div class='nav'>
-// 			<a href='index.html' class='nav__name'>
-// 				{{ name }}
-// 			</a>
-// 			<p class='nav__job'>Front end developer</p>
-// 			<p class='nav__choose'>Intro</p>
-// 		</div>
-// 	`
-// })
-
-// var main = new Vue({
-// 	el: '.main',
-// 	data: {
-// 		image: {
-// 			src: 'img/Portfolio_Website_Maurits_Brouwer.jpg',
-// 		},
-// 		branding: {
-// 			number: '1997',
-// 		},
-// 		aboutme: {
-// 			header_one: 'Interesse in',
-// 			header_two: 'Studie',
-// 			paragraph_one: 'Front-end Development & Visual Design',
-// 			paragraph_two: 'Communication & Multimedia Design',
-// 		},
-// 		links: [
-// 			{title: 'Meer over mij', dest: '/'},
-// 			{title: 'Mijn werk', dest: '/'},
-// 			{title: 'Neem contact op', dest: '/'}
-// 		]
-// 	},
-// 	template: `
-// 		<div class='main'>
-// 			<img :src='image.src' class='main__image' />
-
-// 			<div class='branding'>
-// 				<p class='branding__background'>
-// 					{{ branding.number }}
-// 				</p>
-
-// 				<p class='branding__number'>
-// 					{{ branding.number }}
-// 				</p>
-// 			</div>
-
-// 			<div class='aboutme'>
-// 				<p class='aboutme__header'>{{ aboutme.header_one }}</p>
-// 				<p class='aboutme__text'>{{ aboutme.paragraph_one }}</p>
-
-// 				<p class='aboutme__header aboutme--margin'>{{ aboutme.header_two }}</p>
-// 				<p class='aboutme__text'>{{ aboutme.paragraph_two }}</p>
-// 			</div>
-
-// 			<div class="links">
-// 				<ul>
-// 					<li v-for= 'i in links'><a :href='i.dest'>{{ i.title }}</a></li>
-// 				</ul>
-// 			</div>
-// 		</div>
-// 	`
-// })

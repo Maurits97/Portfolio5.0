@@ -349,6 +349,32 @@ a {
 	}
 }
 
+.contact {
+	@include grid-column(10);
+	@include grid-shift(1);
+
+	.contact__credentials {
+		margin-top: 10px;
+	}
+
+	.contact__other {
+
+		.contact__other__title {
+			margin-top: 30px;
+			margin-bottom: 20px;
+			font-weight: $font-medium;
+		}
+
+		.contact__other__linkedin, .contact__other__instagram, .contact__other__twitter {
+			margin-top: 5px;
+		}
+
+		.contact__other__linkedin:hover, .contact__other__instagram:hover, .contact__other__twitter:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
 .footer{
 	@include grid-column(12);
 
