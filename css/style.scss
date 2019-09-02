@@ -332,7 +332,7 @@ a {
 					@include grid-column(12);
 				}
 			}
-
+			
 			.work__item__underline {
 				@include grid-shift(2);
 				@include grid-column(10);

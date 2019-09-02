@@ -104,7 +104,15 @@ var work = new Vue({
 			header: 'Portfolio Website 1.0',
 			text: 'Mijn allereerste programmeer project was mijn eerste portfolio website. Deze heb ik gemaakt voor een projectvak tijdens mijn eerste jaar van mijn studie. Hoewel er veel techniek ontbrak was ik er erg trots op. Zo is de website niet responsive en vind ik hem inhoudelijk niet erg sterk. Wel was ik trots op het gebruik van het parallax effect. Kortom: een leuke ervaring om op terug te kijken.',
 		},
+
 		item_2: {
+			image: 'img/Maurits_Brouwer_Item_HCI.jpeg',
+			link: 'https://hci.mauritsbrouwer.nl',
+			header: 'HCI Technologies',
+			text: 'HCI Technologies was een leuk schoolvak wat ik had in mijn derde jaar, met name de lab weeks. Hierin ging je met een groepje een concept maken en uitwerken binnen een bepaald thema wat je van te voren gekozen had. Ik had voor AR & VR gekozen. Samen met mijn groepje kregen wij het voor elkaar om een soort escape room te maken in VR (Virtual Reality). Een persoon zet zijn VR Bril op en spawnt in een kamer waarin hij puzzels moet oplossen. Echter weet het persoon in deze virtuele wereld niet hoe hij de puzzels moet oplossen. Gelukkig heeft hij een vriend die doormiddel van AR (Augmented Reality) plaatjes als het waren kan scannen en daarin een hint kan vinden. Er waren 10 plaatjes, waarbij 2 daarvan een hint hadden. Wat ons product uniek maakt is dat AR en VR met elkaar gecombineerd is. Ons concept is eigenlijk voortgekomen uit een spelletje genaamd “Keep Talking and Nobody Explodes”. Dit is een bom spelletje waar een iemand een bom heeft, en de andere persoon de “manual”. Hierin staat hoe je de bom onschadelijk kan maken. Dit effect van elkaar helpen terwijl je niet in dezelfde kamer bent vonden wij een goed begin om verder op te brainstormen.' ,
+		},
+
+		item_3: {
 			image: 'img/Maurits_Brouwer_Item_Dept.jpg',
 			link: 'https://maurits97.github.io/DeptOpdracht/assets/index.html',
 			header: 'Fictieve opdracht: Dept Agency',
@@ -127,11 +135,22 @@ var work = new Vue({
 				<a :href='item_2.link' target='blank'><img :src='item_2.image' class="work__item__image" /></a>
 				<h3 class='work__item__header'> {{ item_2.header}} </h3>
 				<div class='work__item__link'>
-					<a :href='item_2.link' target='blank' ><i class="arrow__circle material-icons-outlined">arrow_drop_down_circle</i>Ga naar..</a>
+					<a :href='item_2.link' target='blank'><i class="arrow__circle material-icons-outlined">arrow_drop_down_circle</i>Ga naar..</a>
 				</div>
 				<p class='work__item__text'> {{ item_2.text }}</p>
 				<div class='work__item__underline'></div>
 			</div>
+
+			<div class="work__item">
+				<a :href='item_3.link' target='blank'><img :src='item_3.image' class="work__item__image" /></a>
+				<h3 class='work__item__header'> {{ item_3.header}} </h3>
+				<div class='work__item__link'>
+					<a :href='item_3.link' target='blank' ><i class="arrow__circle material-icons-outlined">arrow_drop_down_circle</i>Ga naar..</a>
+				</div>
+				<p class='work__item__text'> {{ item_3.text }}</p>
+				<div class='work__item__underline'></div>
+			</div>
+
 		</div>
 	`
 })
