@@ -353,6 +353,11 @@ a {
 	@include grid-column(10);
 	@include grid-shift(1);
 
+	@media only screen and (min-width: $desktop-high) {
+		@include grid-shift(2);
+		@include grid-column(8);
+	}
+
 	.contact__credentials {
 		margin-top: 10px;
 	}

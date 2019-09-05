@@ -342,6 +342,13 @@ a {
   margin-left: 20px;
   left: calc(8.3333333333% - 21.6666666667px + 20px);
   position: relative; }
+  @media only screen and (min-width: 1440px) {
+    .contact {
+      left: calc(16.6666666667% - 23.3333333333px + 20px);
+      position: relative;
+      width: calc(66.6666666667% - 33.3333333333px);
+      float: left;
+      margin-left: 20px; } }
   .contact .contact__credentials {
     margin-top: 10px; }
   .contact .contact__other .contact__other__title {
