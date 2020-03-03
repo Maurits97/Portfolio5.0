@@ -1,6 +1,7 @@
 var headerNumber = $('.header__number');
 var header = $('.header');
 var arrow = $('.arrow');
+var title = $('.title');
 
 $(window).on('scroll', function() {
 	var st = $(this).scrollTop();
@@ -10,13 +11,13 @@ $(window).on('scroll', function() {
    	}
    	header.css({ 'opacity' : (1 - st/200) });
    	arrow.css({ 'opacity' : (1 - st/90)});
+   	title.css({ 'top' : ((60 - (st * 0.222)) + 'px')});
 
    } else {
    	if (screen.width > 768){
-   		headerNumber.css({ 'margin-left' : (20 + 'px')});
+   		headerNumber.css({ 'margin-left' : (20 + 'px')});	
    	}
-
    	header.css({ 'opacity' : 0.1 });
-
+   	title.css({ 'top' : (20 + 'px')});
    }
 });
