@@ -18,6 +18,6 @@ $(window).on('scroll', function() {
    		headerNumber.css({ 'margin-left' : (20 + 'px')});	
    	}
    	header.css({ 'opacity' : 0.1 });
-   	title.css({ 'top' : (20 + 'px')});
+   	
    }
 });
