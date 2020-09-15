@@ -109,7 +109,7 @@ var work = new Vue({
 				image: 'img/Maurits_Brouwer_Item_Denkeffekt.jpg',
 				link: 'https://denkeffekt.nl',
 				header: 'Denkeffekt Remedial Teaching',
-				text: 'Denkeffekt is een praktijk voor bijles en coaching. Voor denkeffekt was ik verantwoordelijk voor zowel het design als de development. De website is zonder frameworks gemaakt. '
+				text: 'Denkeffekt is een praktijk voor bijles en coaching. Voor denkeffekt was ik verantwoordelijk voor zowel het design als de development. De website is zonder front-end frameworks gemaakt. '
 			},
 			// item_3: {
 			// 	image: 'img/Maurits_Brouwer_Item_Portfolio_Website1.png',
@@ -132,7 +132,8 @@ var work = new Vue({
 				<a :href='item.link' target='blank'><img :src='item.image' class="work__item__image" /></a>
 				<h3 class='work__item__header'> {{item.header}} </h3>
 				<div class='work__item__link'>
-					<a :href='item.link' target='blank' ><i class="arrow__circle material-icons-outlined">arrow_drop_down_circle</i>Ga naar..</a>
+					<a :href='item.link' target='blank'><i class="arrow__circle material-icons-outlined ">arrow_drop_down_circle</i>Lees meer..</a>
+					<a :href='item.link' target='blank' ><i class="arrow__circle material-icons-outlined">arrow_drop_down_circle</i>Bekijk website..</a>
 				</div>
 				<p class='work__item__text'> {{ item.text }}</p>
 				<div class='work__item__underline'></div>
@@ -146,24 +147,24 @@ var subwork = new Vue({
 	data: {
 		subwork: {
 			item_1: {
-				image: 'img/Maurits_Brouwer_Item_Portfolio_Website1.png',
-			 	link: 'https://oud.mauritsbrouwer.nl',
-			 	header: 'Portfolio Website 1.0',
+				image: 'img/Maurits_Brouwer_Item_Afstudeeropdracht.png',
+				link: '',
+				header: 'Online deliberation platform, graduation project',
 			},
 			item_2: {
-				image: 'img/Maurits_Brouwer_Item_HCI.jpeg',
-				link: 'https://hci.mauritsbrouwer.nl',
-				header: 'HCI Technologies',
+				image: 'img/Maurits_Brouwer_Item_Themawijk.png',
+				link: '',
+				header: 'De Themawijk',
 			},
 			item_3: {
-				image: 'img/Maurits_Brouwer_Item_HCI.jpeg',
-				link: 'https://hci.mauritsbrouwer.nl',
-				header: 'Online deliberation platform, graduation project',
+				image: 'img/Maurits_Brouwer_Item_Portfolio_Website1.png',
+			 	link: '',
+			 	header: 'Portfolio Website 1.0',
 			},
 			item_4: {
 				image: 'img/Maurits_Brouwer_Item_HCI.jpeg',
-				link: 'https://hci.mauritsbrouwer.nl',
-				header: 'De Themawijk',
+				link: '',
+				header: 'HCI Technologies',
 			},
 		},
 	},
