@@ -101,13 +101,15 @@ var work = new Vue({
 		work: {
 			item_1: {
 				image: 'img/Maurits_Brouwer_Item_BrigitteStarkPortfolio.png',
-				link: '',
+				pagelink: '',
+				weblink: '',
 				header: 'Art portfolio',
 				text: 'Het art portfolio is in opdracht van Brigitte Stark gemaakt. Bij deze opdracht was ik verantwoordelijk voor zowel het design als de development. De website is op een efficiente manier in elkaar gezet dankzij het Vue.js Framework. Met behulp van vue.js bleef mijn code "DRY" en kost het nauwelijks tijd om een nieuw kunstwerk aan de website toe te voegen.'
 			},
 			item_2: {
 				image: 'img/Maurits_Brouwer_Item_Denkeffekt.jpg',
-				link: 'https://denkeffekt.nl',
+				pagelink: '',
+				weblink: 'https://denkeffekt.nl',
 				header: 'Denkeffekt Remedial Teaching',
 				text: 'Denkeffekt is een praktijk voor bijles en coaching. Voor denkeffekt was ik verantwoordelijk voor zowel het design als de development. De website is zonder front-end frameworks gemaakt. '
 			},
@@ -129,11 +131,11 @@ var work = new Vue({
 	template: `
 		<div class='work'>
 			<div class="work__item" v-for="item in work">
-				<a :href='item.link' target='blank'><img :src='item.image' class="work__item__image" /></a>
+				<a :href='item.pagelink' target='blank'><img :src='item.image' class="work__item__image" /></a>
 				<h3 class='work__item__header'> {{item.header}} </h3>
 				<div class='work__item__link'>
-					<a :href='item.link' target='blank'><i class="arrow__circle material-icons-outlined ">arrow_drop_down_circle</i>Lees meer..</a>
-					<a :href='item.link' target='blank' ><i class="arrow__circle material-icons-outlined">arrow_drop_down_circle</i>Bekijk website..</a>
+					<a :href='item.pagelink'><i class="arrow__circle material-icons-outlined ">arrow_drop_down_circle</i>Lees meer..</a>
+					<a :href='item.weblink' target='blank' ><i class="arrow__circle material-icons-outlined">arrow_drop_down_circle</i>Bekijk website..</a>
 				</div>
 				<p class='work__item__text'> {{ item.text }}</p>
 				<div class='work__item__underline'></div>
@@ -148,22 +150,22 @@ var subwork = new Vue({
 		subwork: {
 			item_1: {
 				image: 'img/Maurits_Brouwer_Item_Afstudeeropdracht.png',
-				link: '',
+				pagelink: '',
 				header: 'Online deliberation platform, graduation project',
 			},
 			item_2: {
 				image: 'img/Maurits_Brouwer_Item_Themawijk.png',
-				link: '',
+				pagelink: '',
 				header: 'De Themawijk',
 			},
 			item_3: {
 				image: 'img/Maurits_Brouwer_Item_Portfolio_Website1.png',
-			 	link: '',
+			 	pagelink: '',
 			 	header: 'Portfolio Website 1.0',
 			},
 			item_4: {
 				image: 'img/Maurits_Brouwer_Item_HCI.jpeg',
-				link: '',
+				pagelink: '',
 				header: 'HCI Technologies',
 			},
 		},
@@ -172,11 +174,11 @@ var subwork = new Vue({
 		<div class='subwork'>
 			<h3 class="subwork__header">Overige projecten</h3>
 			<div class="subwork--pushleft">
-				<a><div class="subwork__item" v-for="item in subwork">
+				<div class="subwork__item" v-for="item in subwork"><a :href='item.pagelink'>
 					<div class="subwork__item__image" v-bind:style="{ backgroundImage: 'url(' + item.image + ')' }"></div>
 					
-					<h4 class="subwork__item__header">{{item.header}}</h4>
-				</div></a>
+					<h4 class="subwork__item__header">{{item.header}}</h4></a>
+				</div>
 			</div>
 			
 		</div>
