@@ -546,6 +546,16 @@ a {
   margin-left: 20px;
 }
 
+@media only screen and (min-width: 1440px) {
+  .main .subwork {
+    left: calc(16.66667% - 23.33333px + 20px);
+    position: relative;
+    width: calc(66.66667% - 33.33333px);
+    float: left;
+    margin-left: 20px;
+  }
+}
+
 .main .subwork .subwork__header {
   font-size: 30px;
   font-weight: 500;

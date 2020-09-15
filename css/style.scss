@@ -351,6 +351,11 @@ a {
 		@include grid-shift(1);
 		@include grid-column(11);
 
+		@media only screen and (min-width: $desktop-high) {
+			@include grid-shift(2);
+			@include grid-column(8);
+		}
+
 		.subwork__header {
 			font-size: 30px;
 			font-weight: $font-medium;

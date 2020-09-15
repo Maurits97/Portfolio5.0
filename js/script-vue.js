@@ -158,12 +158,12 @@ var subwork = new Vue({
 			item_3: {
 				image: 'img/Maurits_Brouwer_Item_HCI.jpeg',
 				link: 'https://hci.mauritsbrouwer.nl',
-				header: 'HCI Technologies',
+				header: 'Online deliberation platform, graduation project',
 			},
 			item_4: {
 				image: 'img/Maurits_Brouwer_Item_HCI.jpeg',
 				link: 'https://hci.mauritsbrouwer.nl',
-				header: 'HCI Technologies',
+				header: 'De Themawijk',
 			},
 		},
 	},
