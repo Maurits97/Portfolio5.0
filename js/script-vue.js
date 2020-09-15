@@ -111,19 +111,19 @@ var work = new Vue({
 				header: 'Denkeffekt Remedial Teaching',
 				text: 'Denkeffekt is een praktijk voor bijles en coaching. Voor denkeffekt was ik verantwoordelijk voor zowel het design als de development. De website is zonder frameworks gemaakt. '
 			},
-			item_3: {
-				image: 'img/Maurits_Brouwer_Item_Portfolio_Website1.png',
-				link: 'https://oud.mauritsbrouwer.nl',
-				header: 'Portfolio Website 1.0',
-				text: 'Mijn allereerste programmeer project was mijn eerste portfolio website. Deze heb ik gemaakt voor een projectvak tijdens mijn eerste jaar van mijn studie. Hoewel er veel techniek ontbrak was ik er erg trots op. Zo is de website niet responsive en vind ik hem inhoudelijk niet erg sterk. Wel was ik trots op het gebruik van het parallax effect. Kortom: een leuke ervaring om op terug te kijken.',
-			},
+			// item_3: {
+			// 	image: 'img/Maurits_Brouwer_Item_Portfolio_Website1.png',
+			// 	link: 'https://oud.mauritsbrouwer.nl',
+			// 	header: 'Portfolio Website 1.0',
+			// 	text: 'Mijn allereerste programmeer project was mijn eerste portfolio website. Deze heb ik gemaakt voor een projectvak tijdens mijn eerste jaar van mijn studie. Hoewel er veel techniek ontbrak was ik er erg trots op. Zo is de website niet responsive en vind ik hem inhoudelijk niet erg sterk. Wel was ik trots op het gebruik van het parallax effect. Kortom: een leuke ervaring om op terug te kijken.',
+			// },
 
-			item_6: {
-				image: 'img/Maurits_Brouwer_Item_HCI.jpeg',
-				link: 'https://hci.mauritsbrouwer.nl',
-				header: 'HCI Technologies',
-				text: 'Mijn 2de jaar eindigde met het vak: HCI Technologies. Het leukste bij dit vak waren de Lab Weeks. Je kon hiervoor een thema kiezen en aan de hand daarvan kwam je in een groep terecht. Ik had gekozen voor het thema AR & VR. Samen met mijn groep hadden wij een VR escape room gemaakt. In deze virtuele wereld zat je vast in een kamer en moest je doormiddel van puzzels de deur openen. Deze puzzels waren echter onmogelijk om alleen oplossen. Gelukkig was er een tweede speler die doormiddel van Augmented Reality hints kon vinden. De catch hierin was, dat de speler in de virtuele wereld niet terug kon praten. Wat ons product uniek maakte was dat AR en VR met elkaar gecombineerd werd. Ons concept was eigenlijk voortgekomen uit een spelletje genaamd “Keep Talking and Nobody Explodes”. Dit is een bom spelletje waar één iemand een bom heeft, en de andere persoon de “manual”. Hierin staat hoe je de bom onschadelijk kan maken. Het idee om elkaar te helpen terwijl je niet in dezelfde kamer bent vonden wij een goed begin om verder mee te gaan.',
-			},
+			// item_4: {
+			// 	image: 'img/Maurits_Brouwer_Item_HCI.jpeg',
+			// 	link: 'https://hci.mauritsbrouwer.nl',
+			// 	header: 'HCI Technologies',
+			// 	text: 'Mijn 2de jaar eindigde met het vak: HCI Technologies. Het leukste bij dit vak waren de Lab Weeks. Je kon hiervoor een thema kiezen en aan de hand daarvan kwam je in een groep terecht. Ik had gekozen voor het thema AR & VR. Samen met mijn groep hadden wij een VR escape room gemaakt. In deze virtuele wereld zat je vast in een kamer en moest je doormiddel van puzzels de deur openen. Deze puzzels waren echter onmogelijk om alleen oplossen. Gelukkig was er een tweede speler die doormiddel van Augmented Reality hints kon vinden. De catch hierin was, dat de speler in de virtuele wereld niet terug kon praten. Wat ons product uniek maakte was dat AR en VR met elkaar gecombineerd werd. Ons concept was eigenlijk voortgekomen uit een spelletje genaamd “Keep Talking and Nobody Explodes”. Dit is een bom spelletje waar één iemand een bom heeft, en de andere persoon de “manual”. Hierin staat hoe je de bom onschadelijk kan maken. Het idee om elkaar te helpen terwijl je niet in dezelfde kamer bent vonden wij een goed begin om verder mee te gaan.',
+			// },
 		},
 	},
 	template: `
@@ -137,6 +137,47 @@ var work = new Vue({
 				<p class='work__item__text'> {{ item.text }}</p>
 				<div class='work__item__underline'></div>
 			</div>
+		</div>
+	`
+})
+
+var subwork = new Vue({
+	el: '.subwork',
+	data: {
+		subwork: {
+			item_1: {
+				image: 'img/Maurits_Brouwer_Item_Portfolio_Website1.png',
+			 	link: 'https://oud.mauritsbrouwer.nl',
+			 	header: 'Portfolio Website 1.0',
+			},
+			item_2: {
+				image: 'img/Maurits_Brouwer_Item_HCI.jpeg',
+				link: 'https://hci.mauritsbrouwer.nl',
+				header: 'HCI Technologies',
+			},
+			item_3: {
+				image: 'img/Maurits_Brouwer_Item_HCI.jpeg',
+				link: 'https://hci.mauritsbrouwer.nl',
+				header: 'HCI Technologies',
+			},
+			item_4: {
+				image: 'img/Maurits_Brouwer_Item_HCI.jpeg',
+				link: 'https://hci.mauritsbrouwer.nl',
+				header: 'HCI Technologies',
+			},
+		},
+	},
+	template: `
+		<div class='subwork'>
+			<h3 class="subwork__header">Overige projecten</h3>
+			<div class="subwork--pushleft">
+				<a><div class="subwork__item" v-for="item in subwork">
+					<div class="subwork__item__image" v-bind:style="{ backgroundImage: 'url(' + item.image + ')' }"></div>
+					
+					<h4 class="subwork__item__header">{{item.header}}</h4>
+				</div></a>
+			</div>
+			
 		</div>
 	`
 })
