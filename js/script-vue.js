@@ -131,7 +131,7 @@ var work = new Vue({
 	template: `
 		<div class='work'>
 			<div class="work__item" v-for="item in work">
-				<a :href='item.pagelink' target='blank'><img :src='item.image' class="work__item__image" /></a>
+				<a :href='item.pagelink'><img :src='item.image' class="work__item__image" /></a>
 				<h3 class='work__item__header'> {{item.header}} </h3>
 				<div class='work__item__link'>
 					<a :href='item.pagelink'><i class="arrow__circle material-icons-outlined ">arrow_drop_down_circle</i>Lees meer..</a>
