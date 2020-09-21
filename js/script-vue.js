@@ -102,7 +102,7 @@ var work = new Vue({
 			item_1: {
 				image: 'img/Maurits_Brouwer_Item_BrigitteStarkPortfolio.png',
 				pagelink: '',
-				weblink: '',
+				weblink: 'https://brigittestark.nl',
 				header: 'Art portfolio',
 				text: 'Het art portfolio is in opdracht van Brigitte Stark gemaakt. Bij deze opdracht was ik verantwoordelijk voor zowel het design als de development. De website is op een efficiente manier in elkaar gezet dankzij het Vue.js Framework. Met behulp van vue.js bleef mijn code "DRY" en kost het nauwelijks tijd om een nieuw kunstwerk aan de website toe te voegen.'
 			},
