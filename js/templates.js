@@ -32,6 +32,7 @@ const homepage = {
 			<div class='work__item__link'>
 				<a :href='item.pagelink'><i class="arrow__circle material-icons-outlined ">arrow_drop_down_circle</i>Lees meer..</a>
 				<a :href='item.weblink' target='blank' ><i class="arrow__circle material-icons-outlined">arrow_drop_down_circle</i>Bekijk website..</a>
+				<a :href='item.github' target='blank' ><i class="arrow__circle material-icons-outlined">arrow_drop_down_circle</i>Github</a>
 			</div>
 			<p class='work__item__text'> {{ item.text }}</p>
 			<div class='work__item__underline'></div>

@@ -31,6 +31,7 @@ const workData = {
         image: 'img/Maurits_Brouwer_Item_BrigitteStarkPortfolio.png',
         pagelink: '',
         weblink: 'https://brigittestark.nl',
+        github: 'https://github.com/Maurits97/Brigitte-Portfolio',
         header: 'Art portfolio',
         text: 'Het art portfolio is in opdracht van Brigitte Stark gemaakt. Bij deze opdracht was ik verantwoordelijk voor zowel het design als de development. De website is op een efficiente manier in elkaar gezet dankzij het Vue.js Framework. Met behulp van vue.js bleef mijn code "DRY" en kost het nauwelijks tijd om een nieuw kunstwerk aan de website toe te voegen.'
     },
@@ -38,6 +39,7 @@ const workData = {
         image: 'img/Maurits_Brouwer_Item_Denkeffekt.jpg',
         pagelink: '',
         weblink: 'https://denkeffekt.nl',
+        github: 'https://github.com/Maurits97/Denkeffekt',
         header: 'Denkeffekt Remedial Teaching',
         text: 'Denkeffekt is een praktijk voor bijles en coaching. Voor denkeffekt was ik verantwoordelijk voor zowel het design als de development. De website is zonder front-end frameworks gemaakt. '
     }
