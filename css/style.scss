@@ -23,404 +23,406 @@ a {
 	text-decoration: none;
 }
 
-.title {
-	width: 100%;
-	font-size: 16px;
-	text-transform: uppercase;
-	position: fixed;
-	transform: none;
-	top: 60px;
-	z-index: 1;
-	animation: 1.5s opacity ease-out;
-
-	@media only screen and (max-width: $tablet-max) {
-		top: 30px;
-	}
+#app {
+	.title {
+		width: 100%;
+		font-size: 16px;
+		text-transform: uppercase;
+		position: fixed;
+		transform: none;
+		top: 60px;
+		z-index: 1;
+		animation: 1.5s opacity ease-out;
 	
-	.title__name {
-		@include grid-column(4);
-		@include grid-shift(1);
-
-		font-size: 21px;
-		margin-top: -4px;
-
-		@media only screen and (min-width: $desktop-high) {
-			font-size: 28px;
-		}
-
 		@media only screen and (max-width: $tablet-max) {
-			@include grid-column(10);
-		}
-	}
-
-	.title__job {
-		@include grid-column(4);
-
-		text-align: center;
-
-		@media only screen and (min-width: $desktop-high) {
-			font-size: 21px;
+			top: 30px;
 		}
 		
-		@media only screen and (max-width: $tablet-max) {
-			@include grid-column(10);
+		.title__name {
+			@include grid-column(4);
 			@include grid-shift(1);
-
-			top: 30px;
-			position: absolute;
-			text-align: left;
-		}
-	}
-}
-
-.header {
-	@include grid-container();
-
-	position: relative;
-
-	.header__number {
-		@include grid-column(10);
-		@include grid-shift(2);
-
-		margin-top: 45px;
-		margin-left: 120px;
-		position: fixed;
-		font-size: 450px;
-		font-weight: $font-bold;
-
-		@media only screen and (max-width: $tablet-max) {
-			margin-top: 200px;
-			font-size: 280px;
-			margin-left: 0px;
-		}
-
-		@media only screen and (min-width: $desktop-high) {
-			font-size: 600px;
-			margin-top: 200px;
-		}
-
-		&:after {
-			content: '';
-			position: absolute;
-			top: 167px;
-			left: 496px;
-			width: 7px;
-			height: 269px;
-			background-color: black;
-			transform: skew(-23.5deg, 0deg);
-			animation: firstload 1s ease-out;
-
-			@media only screen and (max-width: $tablet-max) {
-				display: none;
-			}
-
+	
+			font-size: 21px;
+			margin-top: -4px;
+	
 			@media only screen and (min-width: $desktop-high) {
-				top: 224px;
-				left: 664px;
-				width: 9px;
-				height: 357px;
-				animation: firstload--high 1s ease-out;
+				font-size: 28px;
 			}
-		}
-	}
-}
-
-.main {
-	margin-top: 50px;
-
-	.headline {
-		border-top: 3px solid $black;
-		margin-top: 100px;
-		padding-top: 10px;
-		margin-bottom: 100px;
-		font-size: 25px;
-
-		@media only screen and (min-width: $desktop-high) {
-			font-size: 30px;
-		}
-
-		.headline__number {
-			@include grid-column(3);
-
+	
 			@media only screen and (max-width: $tablet-max) {
-				@include grid-column(4);
-
-				font-size: 20px;
+				@include grid-column(10);
 			}
 		}
-
-		.headline__subtext {
-			@include grid-column(9);
-
-			text-align: right;
-			font-weight: $font-medium;
-
-			@media only screen and (max-width: $tablet-max) {
-				@include grid-column(8);
-
-				font-size: 20px;
-			}
-		}
-	}
-
-	.aboutme {
-		position: relative;
-
-		.aboutme__portret {
-			@include grid-shift(1);
-			@include grid-column(7);
-
-			margin-bottom: 120px;
-
-			@media only screen and (max-width: $tablet-max) {
-				@include grid-column(11);
-
-				margin-bottom: 0px;
-				margin-top: 50px;
-			}
-
+	
+		.title__job {
+			@include grid-column(4);
+	
+			text-align: center;
+	
 			@media only screen and (min-width: $desktop-high) {
-				@include grid-shift(2);
-				@include grid-column(6);
-			}
-		}
-
-		.aboutme__firstname {
-			@include grid-shift(6);
-
-			position: absolute;
-			top: 250px;
-			font-size: 100px;
-			font-weight: $font-medium;
-
-			@media only screen and (max-width: $tablet-max) {
-				font-size: 70px;
-				top: 219px;
-				left: 52px;
-			}
-
-			@media only screen and (min-width: $desktop-high) {
-				@include grid-shift(7);
-
-				position: absolute;
-				font-size: 130px;
-			}
-		}
-
-		.aboutme__surname {
-			@include grid-shift(6);
-
-			position: absolute;
-			top: 250px;
-			font-size: 60px;
-			margin-top: 100px;
-			margin-left: 4.5px;
-			font-weight: $font-medium;
-
-			@media only screen and (max-width: $tablet-max) {
-				font-size: 50px;
-				top: 190px;
-				left: 50px;
-			}
-
-			@media only screen and (min-width: $desktop-high) {
-				@include grid-shift(7);
-
-				position: absolute;
-				font-size: 80px;
-				margin-top: 125px;
-			}
-		}
-
-		.aboutme__intro {
-			@include grid-column(3);
-			@include grid-shift(1);
-
-			margin-top: 200px;
-
-			@media only screen and (max-width: $tablet-max) {
-				@include grid-column(11);
-
-				margin-top: 50px;
-			}
-
-			@media only screen and (min-width: $desktop-high) {
-				@include grid-shift(2);
-				@include grid-column(2);
-
-				font-size: 20px;
-				margin-top: 260px;
-			}
-
-			.aboutme__intro__study {
-				margin-top: 20px;
-			}
-
-			.aboutme__intro__signature {
-				@include grid-column(12);
-
-				@media only screen and (max-width: $tablet-max) {
-					@include grid-column(10);
-				}
-			}
-		}
-	}
-	.work {
-
-		.work__item {
-			@include grid-shift(1);
-			@include grid-column(10);
-
-			@media only screen and (max-width: $tablet-max) {
-				@include grid-column(11);
-			}
-
-			@media only screen and (min-width: $desktop-high) {
-				@include grid-shift(2);
-				@include grid-column(8);
-			}
-				
-			.work__item__image {
-				width: 100%;
-			}
-
-			.work__item__header {
-				margin: 0;
-				padding: 0;
-				font-size: 30px;
-				font-weight: $font-medium;
-				margin-top: 30px;
-				margin-bottom: 40px;
-
-				@media only screen and (max-width: $tablet-max) {
-					margin-top: 10px;
-					margin-bottom: 10px;
-					font-size: 20px;
-				}
-
-				@media only screen and (min-width: $desktop-high) {
-					font-size: 35px;
-				}
-			}
-
-
-			.work__item__link {
-				@include grid-column(2);
-
-				margin-top: -5px;
-				margin-left: -3px;
-				margin-bottom: 10px;
-				font-size: 10px;
-				display: flex;
-				flex-direction: column;
-
-				@media only screen and (max-width: $tablet-max) {
-					@include grid-column(6);
-					margin-left: -5px;
-					margin-bottom: 30px;
-				}
-
-				@media only screen and (min-width: $desktop-high) {
-					font-size: 15px;
-				}
-			}
-
-			.work__item__text {
-				@include grid-column(7);
-
-				margin-left: 41px;
-				margin-bottom: 80px;
-
-				@media only screen and (max-width: $tablet-max) {
-					@include grid-column(12);
-				}
+				font-size: 21px;
 			}
 			
-			.work__item__underline {
-				@include grid-shift(2);
+			@media only screen and (max-width: $tablet-max) {
 				@include grid-column(10);
-
-				border-bottom: 3px solid $black;
-				margin-bottom: 200px;
-
+				@include grid-shift(1);
+	
+				top: 30px;
+				position: absolute;
+				text-align: left;
+			}
+		}
+	}
+	
+	.header {
+		@include grid-container();
+	
+		position: relative;
+	
+		.header__number {
+			@include grid-column(10);
+			@include grid-shift(2);
+	
+			margin-top: 45px;
+			margin-left: 120px;
+			position: fixed;
+			font-size: 450px;
+			font-weight: $font-bold;
+	
+			@media only screen and (max-width: $tablet-max) {
+				margin-top: 200px;
+				font-size: 280px;
+				margin-left: 0px;
+			}
+	
+			@media only screen and (min-width: $desktop-high) {
+				font-size: 600px;
+				margin-top: 200px;
+			}
+	
+			&:after {
+				content: '';
+				position: absolute;
+				top: 167px;
+				left: 496px;
+				width: 7px;
+				height: 269px;
+				background-color: black;
+				transform: skew(-23.5deg, 0deg);
+				animation: firstload 1s ease-out;
+	
 				@media only screen and (max-width: $tablet-max) {
-					@include grid-shift(0);
-					@include grid-column(12);
+					display: none;
+				}
+	
+				@media only screen and (min-width: $desktop-high) {
+					top: 224px;
+					left: 664px;
+					width: 9px;
+					height: 357px;
+					animation: firstload--high 1s ease-out;
 				}
 			}
 		}
 	}
-	.subwork {
+	#content {
+		margin-top: 50px;
+	
+		.headline {
+			border-top: 3px solid $black;
+			margin-top: 100px;
+			padding-top: 10px;
+			margin-bottom: 100px;
+			font-size: 25px;
+	
+			@media only screen and (min-width: $desktop-high) {
+				font-size: 30px;
+			}
+	
+			.headline__number {
+				@include grid-column(3);
+	
+				@media only screen and (max-width: $tablet-max) {
+					@include grid-column(4);
+	
+					font-size: 20px;
+				}
+			}
+	
+			.headline__subtext {
+				@include grid-column(9);
+	
+				text-align: right;
+				font-weight: $font-medium;
+	
+				@media only screen and (max-width: $tablet-max) {
+					@include grid-column(8);
+	
+					font-size: 20px;
+				}
+			}
+		}
+	
+		.aboutme {
+			position: relative;
+	
+			.aboutme__portret {
+				@include grid-shift(1);
+				@include grid-column(7);
+	
+				margin-bottom: 120px;
+	
+				@media only screen and (max-width: $tablet-max) {
+					@include grid-column(11);
+	
+					margin-bottom: 0px;
+					margin-top: 50px;
+				}
+	
+				@media only screen and (min-width: $desktop-high) {
+					@include grid-shift(2);
+					@include grid-column(6);
+				}
+			}
+	
+			.aboutme__firstname {
+				@include grid-shift(6);
+	
+				position: absolute;
+				top: 250px;
+				font-size: 100px;
+				font-weight: $font-medium;
+	
+				@media only screen and (max-width: $tablet-max) {
+					font-size: 70px;
+					top: 219px;
+					left: 52px;
+				}
+	
+				@media only screen and (min-width: $desktop-high) {
+					@include grid-shift(7);
+	
+					position: absolute;
+					font-size: 130px;
+				}
+			}
+	
+			.aboutme__surname {
+				@include grid-shift(6);
+	
+				position: absolute;
+				top: 250px;
+				font-size: 60px;
+				margin-top: 100px;
+				margin-left: 4.5px;
+				font-weight: $font-medium;
+	
+				@media only screen and (max-width: $tablet-max) {
+					font-size: 50px;
+					top: 190px;
+					left: 50px;
+				}
+	
+				@media only screen and (min-width: $desktop-high) {
+					@include grid-shift(7);
+	
+					position: absolute;
+					font-size: 80px;
+					margin-top: 125px;
+				}
+			}
+	
+			.aboutme__intro {
+				@include grid-column(3);
+				@include grid-shift(1);
+	
+				margin-top: 200px;
+	
+				@media only screen and (max-width: $tablet-max) {
+					@include grid-column(11);
+	
+					margin-top: 50px;
+				}
+	
+				@media only screen and (min-width: $desktop-high) {
+					@include grid-shift(2);
+					@include grid-column(2);
+	
+					font-size: 20px;
+					margin-top: 260px;
+				}
+	
+				.aboutme__intro__study {
+					margin-top: 20px;
+				}
+	
+				.aboutme__intro__signature {
+					@include grid-column(12);
+	
+					@media only screen and (max-width: $tablet-max) {
+						@include grid-column(10);
+					}
+				}
+			}
+		}
+		.work {
+	
+			.work__item {
+				@include grid-shift(1);
+				@include grid-column(10);
+	
+				@media only screen and (max-width: $tablet-max) {
+					@include grid-column(11);
+				}
+	
+				@media only screen and (min-width: $desktop-high) {
+					@include grid-shift(2);
+					@include grid-column(8);
+				}
+					
+				.work__item__image {
+					width: 100%;
+				}
+	
+				.work__item__header {
+					margin: 0;
+					padding: 0;
+					font-size: 30px;
+					font-weight: $font-medium;
+					margin-top: 30px;
+					margin-bottom: 40px;
+	
+					@media only screen and (max-width: $tablet-max) {
+						margin-top: 10px;
+						margin-bottom: 10px;
+						font-size: 20px;
+					}
+	
+					@media only screen and (min-width: $desktop-high) {
+						font-size: 35px;
+					}
+				}
+	
+	
+				.work__item__link {
+					@include grid-column(2);
+	
+					margin-top: -5px;
+					margin-left: -3px;
+					margin-bottom: 10px;
+					font-size: 10px;
+					display: flex;
+					flex-direction: column;
+	
+					@media only screen and (max-width: $tablet-max) {
+						@include grid-column(6);
+						margin-left: -5px;
+						margin-bottom: 30px;
+					}
+	
+					@media only screen and (min-width: $desktop-high) {
+						font-size: 15px;
+					}
+				}
+	
+				.work__item__text {
+					@include grid-column(7);
+	
+					margin-left: 41px;
+					margin-bottom: 80px;
+	
+					@media only screen and (max-width: $tablet-max) {
+						@include grid-column(12);
+					}
+				}
+				
+				.work__item__underline {
+					@include grid-shift(2);
+					@include grid-column(10);
+	
+					border-bottom: 3px solid $black;
+					margin-bottom: 200px;
+	
+					@media only screen and (max-width: $tablet-max) {
+						@include grid-shift(0);
+						@include grid-column(12);
+					}
+				}
+			}
+		}
+		.subwork {
+			@include grid-shift(1);
+			@include grid-column(11);
+	
+			@media only screen and (min-width: $desktop-high) {
+				@include grid-shift(2);
+				@include grid-column(8);
+			}
+	
+			.subwork__header {
+				font-size: 30px;
+				font-weight: $font-medium;
+				margin-bottom: 30px;
+			}
+	
+			.subwork--pushleft {
+				margin-left: -20px;
+			}
+	
+			.subwork__item {
+				@include grid-column(4);
+	
+				margin-bottom: 30px;
+				margin-right: 10px;
+				width: 300px;
+				min-height: 270px;
+	
+				.subwork__item__image {
+					width: 100%;
+					height: 200px;
+					background-size: cover;
+				}
+				
+				.subwork__item__header {
+					margin-top: 10px;
+					font-weight: $font-medium;
+					font-size: 20px;
+				}
+			}
+		}
+	}
+	
+	.contact {
+		@include grid-column(10);
 		@include grid-shift(1);
-		@include grid-column(11);
-
+	
 		@media only screen and (min-width: $desktop-high) {
 			@include grid-shift(2);
 			@include grid-column(8);
 		}
-
-		.subwork__header {
-			font-size: 30px;
-			font-weight: $font-medium;
-			margin-bottom: 30px;
+	
+		.contact__credentials {
+			margin-top: 10px;
 		}
-
-		.subwork--pushleft {
-			margin-left: -20px;
-		}
-
-		.subwork__item {
-			@include grid-column(4);
-
-			margin-bottom: 30px;
-			margin-right: 10px;
-			width: 300px;
-			min-height: 270px;
-
-			.subwork__item__image {
-				width: 100%;
-				height: 200px;
-				background-size: cover;
-			}
-			
-			.subwork__item__header {
-				margin-top: 10px;
+	
+		.contact__other {
+	
+			.contact__other__title {
+				margin-top: 30px;
+				margin-bottom: 20px;
 				font-weight: $font-medium;
-				font-size: 20px;
+			}
+	
+			.contact__other__linkedin, .contact__other__instagram, .contact__other__twitter {
+				margin-top: 5px;
+			}
+	
+			.contact__other__linkedin:hover, .contact__other__instagram:hover, .contact__other__twitter:hover {
+				text-decoration: underline;
 			}
 		}
 	}
-}
 
-.contact {
-	@include grid-column(10);
-	@include grid-shift(1);
-
-	@media only screen and (min-width: $desktop-high) {
-		@include grid-shift(2);
-		@include grid-column(8);
-	}
-
-	.contact__credentials {
-		margin-top: 10px;
-	}
-
-	.contact__other {
-
-		.contact__other__title {
-			margin-top: 30px;
-			margin-bottom: 20px;
-			font-weight: $font-medium;
-		}
-
-		.contact__other__linkedin, .contact__other__instagram, .contact__other__twitter {
-			margin-top: 5px;
-		}
-
-		.contact__other__linkedin:hover, .contact__other__instagram:hover, .contact__other__twitter:hover {
-			text-decoration: underline;
-		}
-	}
 }
 
 .footer{

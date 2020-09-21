@@ -17,38 +17,49 @@
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="shortcut icon" type="image/x-icon" href="img/Portfolio_Website_Maurits_Brouwer_Favicon.png">
 
- 	<!--scripts-->
+	<!-- scripts-->
+	<!--Jquery CDN-->
 	<script src="https://code.jquery.com/jquery-3.4.0.slim.min.js"></script>
+	<!--AOS CDN-->
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </head>
 
 <body>
-	<div class="title"></div>
-	<div class="header"></div>
+	<div id="app">
+		<div class='title'>
+			<p href='index.html' class='title__name'>Maurits Brouwer</p>
+			<p class='title__job'>Front end developer</p>
+		</div>
 
-	<i class="arrow material-icons">keyboard_arrow_down</i>
+		<div class='header'>
+			<p class='header__number' data-aos="fade-up">97</p>
+		</div>
 
-	<div class="main">
-		<div class="headline vue--one"></div>
-		<div class="aboutme"></div>
+		<i class="arrow material-icons">keyboard_arrow_down</i>
 
-		<div class="headline vue--two"></div>
-		
-		<div class="work"></div>
-		<div class="subwork"></div>
-
-		<div class="headline vue--three"></div>
+		<div id="content">
+            <router-view></router-view>
+        </div>
+	</div>
+	
+	<div class='footer'>
+		<p class='footer__name'>Maurits Brouwer</p>
+		<p id='footer__year'></p>
 	</div>
 
-	<div class="contact"></div>
-	
-	<div class='footer'></div>
+	</div>
 
 	<!--scripts-->
-  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-  <script src="js/script.js"></script>
-  <script src="js/script-vue.js"></script>
-  <script src="js/script-animation.js"></script>
+	<!--Vue CDN-->
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<!--Vue router CDN-->
+	<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+	<!--Custom scripts-->
+	<script src="js/data.js"></script>
+	<script src="js/templates.js"></script>
+	<!-- <script src="js/script-vue.js"></script> !!!!!OUD (moet nog weg)!!!!!-->
+	<script src="js/main.js"></script>
+	<script src="js/script-animation.js"></script>
 </body>
 </html>

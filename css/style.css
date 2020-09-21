@@ -100,7 +100,7 @@ a {
   text-decoration: none;
 }
 
-.title {
+#app .title {
   width: 100%;
   font-size: 16px;
   text-transform: uppercase;
@@ -114,12 +114,12 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
-  .title {
+  #app .title {
     top: 30px;
   }
 }
 
-.title .title__name {
+#app .title .title__name {
   width: calc(33.33333% - 26.66667px);
   float: left;
   margin-left: 20px;
@@ -130,20 +130,20 @@ a {
 }
 
 @media only screen and (min-width: 1440px) {
-  .title .title__name {
+  #app .title .title__name {
     font-size: 28px;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .title .title__name {
+  #app .title .title__name {
     width: calc(83.33333% - 36.66667px);
     float: left;
     margin-left: 20px;
   }
 }
 
-.title .title__job {
+#app .title .title__job {
   width: calc(33.33333% - 26.66667px);
   float: left;
   margin-left: 20px;
@@ -151,13 +151,13 @@ a {
 }
 
 @media only screen and (min-width: 1440px) {
-  .title .title__job {
+  #app .title .title__job {
     font-size: 21px;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .title .title__job {
+  #app .title .title__job {
     width: calc(83.33333% - 36.66667px);
     float: left;
     margin-left: 20px;
@@ -169,17 +169,17 @@ a {
   }
 }
 
-.header {
+#app .header {
   position: relative;
 }
 
-.header::after {
+#app .header::after {
   clear: both;
   content: "";
   display: block;
 }
 
-.header .header__number {
+#app .header .header__number {
   width: calc(83.33333% - 36.66667px);
   float: left;
   margin-left: 20px;
@@ -193,7 +193,7 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
-  .header .header__number {
+  #app .header .header__number {
     margin-top: 200px;
     font-size: 280px;
     margin-left: 0px;
@@ -201,13 +201,13 @@ a {
 }
 
 @media only screen and (min-width: 1440px) {
-  .header .header__number {
+  #app .header .header__number {
     font-size: 600px;
     margin-top: 200px;
   }
 }
 
-.header .header__number:after {
+#app .header .header__number:after {
   content: '';
   position: absolute;
   top: 167px;
@@ -222,13 +222,13 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
-  .header .header__number:after {
+  #app .header .header__number:after {
     display: none;
   }
 }
 
 @media only screen and (min-width: 1440px) {
-  .header .header__number:after {
+  #app .header .header__number:after {
     top: 224px;
     left: 664px;
     width: 9px;
@@ -238,11 +238,11 @@ a {
   }
 }
 
-.main {
+#app #content {
   margin-top: 50px;
 }
 
-.main .headline {
+#app #content .headline {
   border-top: 3px solid black;
   margin-top: 100px;
   padding-top: 10px;
@@ -251,19 +251,19 @@ a {
 }
 
 @media only screen and (min-width: 1440px) {
-  .main .headline {
+  #app #content .headline {
     font-size: 30px;
   }
 }
 
-.main .headline .headline__number {
+#app #content .headline .headline__number {
   width: calc(25% - 25px);
   float: left;
   margin-left: 20px;
 }
 
 @media only screen and (max-width: 768px) {
-  .main .headline .headline__number {
+  #app #content .headline .headline__number {
     width: calc(33.33333% - 26.66667px);
     float: left;
     margin-left: 20px;
@@ -271,7 +271,7 @@ a {
   }
 }
 
-.main .headline .headline__subtext {
+#app #content .headline .headline__subtext {
   width: calc(75% - 35px);
   float: left;
   margin-left: 20px;
@@ -280,7 +280,7 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
-  .main .headline .headline__subtext {
+  #app #content .headline .headline__subtext {
     width: calc(66.66667% - 33.33333px);
     float: left;
     margin-left: 20px;
@@ -288,11 +288,11 @@ a {
   }
 }
 
-.main .aboutme {
+#app #content .aboutme {
   position: relative;
 }
 
-.main .aboutme .aboutme__portret {
+#app #content .aboutme .aboutme__portret {
   left: calc(8.33333% - 21.66667px + 20px);
   position: relative;
   width: calc(58.33333% - 31.66667px);
@@ -302,7 +302,7 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
-  .main .aboutme .aboutme__portret {
+  #app #content .aboutme .aboutme__portret {
     width: calc(91.66667% - 38.33333px);
     float: left;
     margin-left: 20px;
@@ -312,7 +312,7 @@ a {
 }
 
 @media only screen and (min-width: 1440px) {
-  .main .aboutme .aboutme__portret {
+  #app #content .aboutme .aboutme__portret {
     left: calc(16.66667% - 23.33333px + 20px);
     position: relative;
     width: calc(50% - 30px);
@@ -321,7 +321,7 @@ a {
   }
 }
 
-.main .aboutme .aboutme__firstname {
+#app #content .aboutme .aboutme__firstname {
   left: calc(50% - 30px + 20px);
   position: relative;
   position: absolute;
@@ -331,7 +331,7 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
-  .main .aboutme .aboutme__firstname {
+  #app #content .aboutme .aboutme__firstname {
     font-size: 70px;
     top: 219px;
     left: 52px;
@@ -339,7 +339,7 @@ a {
 }
 
 @media only screen and (min-width: 1440px) {
-  .main .aboutme .aboutme__firstname {
+  #app #content .aboutme .aboutme__firstname {
     left: calc(58.33333% - 31.66667px + 20px);
     position: relative;
     position: absolute;
@@ -347,7 +347,7 @@ a {
   }
 }
 
-.main .aboutme .aboutme__surname {
+#app #content .aboutme .aboutme__surname {
   left: calc(50% - 30px + 20px);
   position: relative;
   position: absolute;
@@ -359,7 +359,7 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
-  .main .aboutme .aboutme__surname {
+  #app #content .aboutme .aboutme__surname {
     font-size: 50px;
     top: 190px;
     left: 50px;
@@ -367,7 +367,7 @@ a {
 }
 
 @media only screen and (min-width: 1440px) {
-  .main .aboutme .aboutme__surname {
+  #app #content .aboutme .aboutme__surname {
     left: calc(58.33333% - 31.66667px + 20px);
     position: relative;
     position: absolute;
@@ -376,7 +376,7 @@ a {
   }
 }
 
-.main .aboutme .aboutme__intro {
+#app #content .aboutme .aboutme__intro {
   width: calc(25% - 25px);
   float: left;
   margin-left: 20px;
@@ -386,7 +386,7 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
-  .main .aboutme .aboutme__intro {
+  #app #content .aboutme .aboutme__intro {
     width: calc(91.66667% - 38.33333px);
     float: left;
     margin-left: 20px;
@@ -395,7 +395,7 @@ a {
 }
 
 @media only screen and (min-width: 1440px) {
-  .main .aboutme .aboutme__intro {
+  #app #content .aboutme .aboutme__intro {
     left: calc(16.66667% - 23.33333px + 20px);
     position: relative;
     width: calc(16.66667% - 23.33333px);
@@ -406,25 +406,25 @@ a {
   }
 }
 
-.main .aboutme .aboutme__intro .aboutme__intro__study {
+#app #content .aboutme .aboutme__intro .aboutme__intro__study {
   margin-top: 20px;
 }
 
-.main .aboutme .aboutme__intro .aboutme__intro__signature {
+#app #content .aboutme .aboutme__intro .aboutme__intro__signature {
   width: calc(100% - 40px);
   float: left;
   margin-left: 20px;
 }
 
 @media only screen and (max-width: 768px) {
-  .main .aboutme .aboutme__intro .aboutme__intro__signature {
+  #app #content .aboutme .aboutme__intro .aboutme__intro__signature {
     width: calc(83.33333% - 36.66667px);
     float: left;
     margin-left: 20px;
   }
 }
 
-.main .work .work__item {
+#app #content .work .work__item {
   left: calc(8.33333% - 21.66667px + 20px);
   position: relative;
   width: calc(83.33333% - 36.66667px);
@@ -433,7 +433,7 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
-  .main .work .work__item {
+  #app #content .work .work__item {
     width: calc(91.66667% - 38.33333px);
     float: left;
     margin-left: 20px;
@@ -441,7 +441,7 @@ a {
 }
 
 @media only screen and (min-width: 1440px) {
-  .main .work .work__item {
+  #app #content .work .work__item {
     left: calc(16.66667% - 23.33333px + 20px);
     position: relative;
     width: calc(66.66667% - 33.33333px);
@@ -450,11 +450,11 @@ a {
   }
 }
 
-.main .work .work__item .work__item__image {
+#app #content .work .work__item .work__item__image {
   width: 100%;
 }
 
-.main .work .work__item .work__item__header {
+#app #content .work .work__item .work__item__header {
   margin: 0;
   padding: 0;
   font-size: 30px;
@@ -464,7 +464,7 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
-  .main .work .work__item .work__item__header {
+  #app #content .work .work__item .work__item__header {
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 20px;
@@ -472,12 +472,12 @@ a {
 }
 
 @media only screen and (min-width: 1440px) {
-  .main .work .work__item .work__item__header {
+  #app #content .work .work__item .work__item__header {
     font-size: 35px;
   }
 }
 
-.main .work .work__item .work__item__link {
+#app #content .work .work__item .work__item__link {
   width: calc(16.66667% - 23.33333px);
   float: left;
   margin-left: 20px;
@@ -495,7 +495,7 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
-  .main .work .work__item .work__item__link {
+  #app #content .work .work__item .work__item__link {
     width: calc(50% - 30px);
     float: left;
     margin-left: 20px;
@@ -505,12 +505,12 @@ a {
 }
 
 @media only screen and (min-width: 1440px) {
-  .main .work .work__item .work__item__link {
+  #app #content .work .work__item .work__item__link {
     font-size: 15px;
   }
 }
 
-.main .work .work__item .work__item__text {
+#app #content .work .work__item .work__item__text {
   width: calc(58.33333% - 31.66667px);
   float: left;
   margin-left: 20px;
@@ -519,14 +519,14 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
-  .main .work .work__item .work__item__text {
+  #app #content .work .work__item .work__item__text {
     width: calc(100% - 40px);
     float: left;
     margin-left: 20px;
   }
 }
 
-.main .work .work__item .work__item__underline {
+#app #content .work .work__item .work__item__underline {
   left: calc(16.66667% - 23.33333px + 20px);
   position: relative;
   width: calc(83.33333% - 36.66667px);
@@ -537,7 +537,7 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
-  .main .work .work__item .work__item__underline {
+  #app #content .work .work__item .work__item__underline {
     left: calc(0% - 20px + 20px);
     position: relative;
     width: calc(100% - 40px);
@@ -546,7 +546,7 @@ a {
   }
 }
 
-.main .subwork {
+#app #content .subwork {
   left: calc(8.33333% - 21.66667px + 20px);
   position: relative;
   width: calc(91.66667% - 38.33333px);
@@ -555,7 +555,7 @@ a {
 }
 
 @media only screen and (min-width: 1440px) {
-  .main .subwork {
+  #app #content .subwork {
     left: calc(16.66667% - 23.33333px + 20px);
     position: relative;
     width: calc(66.66667% - 33.33333px);
@@ -564,17 +564,17 @@ a {
   }
 }
 
-.main .subwork .subwork__header {
+#app #content .subwork .subwork__header {
   font-size: 30px;
   font-weight: 500;
   margin-bottom: 30px;
 }
 
-.main .subwork .subwork--pushleft {
+#app #content .subwork .subwork--pushleft {
   margin-left: -20px;
 }
 
-.main .subwork .subwork__item {
+#app #content .subwork .subwork__item {
   width: calc(33.33333% - 26.66667px);
   float: left;
   margin-left: 20px;
@@ -584,19 +584,19 @@ a {
   min-height: 270px;
 }
 
-.main .subwork .subwork__item .subwork__item__image {
+#app #content .subwork .subwork__item .subwork__item__image {
   width: 100%;
   height: 200px;
   background-size: cover;
 }
 
-.main .subwork .subwork__item .subwork__item__header {
+#app #content .subwork .subwork__item .subwork__item__header {
   margin-top: 10px;
   font-weight: 500;
   font-size: 20px;
 }
 
-.contact {
+#app .contact {
   width: calc(83.33333% - 36.66667px);
   float: left;
   margin-left: 20px;
@@ -605,7 +605,7 @@ a {
 }
 
 @media only screen and (min-width: 1440px) {
-  .contact {
+  #app .contact {
     left: calc(16.66667% - 23.33333px + 20px);
     position: relative;
     width: calc(66.66667% - 33.33333px);
@@ -614,21 +614,21 @@ a {
   }
 }
 
-.contact .contact__credentials {
+#app .contact .contact__credentials {
   margin-top: 10px;
 }
 
-.contact .contact__other .contact__other__title {
+#app .contact .contact__other .contact__other__title {
   margin-top: 30px;
   margin-bottom: 20px;
   font-weight: 500;
 }
 
-.contact .contact__other .contact__other__linkedin, .contact .contact__other .contact__other__instagram, .contact .contact__other .contact__other__twitter {
+#app .contact .contact__other .contact__other__linkedin, #app .contact .contact__other .contact__other__instagram, #app .contact .contact__other .contact__other__twitter {
   margin-top: 5px;
 }
 
-.contact .contact__other .contact__other__linkedin:hover, .contact .contact__other .contact__other__instagram:hover, .contact .contact__other .contact__other__twitter:hover {
+#app .contact .contact__other .contact__other__linkedin:hover, #app .contact .contact__other .contact__other__instagram:hover, #app .contact .contact__other .contact__other__twitter:hover {
   text-decoration: underline;
 }
 
