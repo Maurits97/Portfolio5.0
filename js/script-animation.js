@@ -7,7 +7,7 @@ $(window).on('scroll', function() {
 	var st = $(this).scrollTop();
   if(st < 180){
   	if (screen.width > 768){
-   		headerNumber.css({ 'margin-left' : ((120 - (st * 0.555)) + 'px')});
+		headerNumber.css({ 'margin-left' : ((120 - (st * 0.555)) + 'px')});
    		title.css({ 'top' : ((60 - (st * 0.222)) + 'px')});
    	}
    	header.css({ 'opacity' : (1 - st/200) });
@@ -19,3 +19,4 @@ $(window).on('scroll', function() {
    	header.css({ 'opacity' : 0.1 });
    }
 });
+

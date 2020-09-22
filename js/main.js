@@ -7,8 +7,18 @@ const router = new VueRouter({
             component: homepage,
             name: 'homepage',
             props: {personalData, headlineData, workData, subworkData, contactData}
+        },
+        {
+            path: '/:project',
+            component: project, 
+            name: 'project',
+            props: {projectInfo}
         }
-    ]
+    ],
+    //when clicked on router link, page will load on top.
+    scrollBehavior (to, from, savedPosition) {
+        return { x: 0, y: 0 }
+      }
 })
 
 var app = new Vue({
@@ -28,3 +38,11 @@ var year = d.getFullYear();
 
 const footerY = document.getElementById('footer__year');
 footerY.innerHTML = year;
+
+//Auto reload on back button
+jQuery( document ).ready(function( $ ) {
+	//Use this inside your document ready jQuery 
+	$(window).on('popstate', function() {
+	   location.reload(true);
+	});
+ });

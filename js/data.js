@@ -3,6 +3,7 @@
 const personalData = {
     firstname: 'Maurits',
     surname: 'Brouwer',
+    number: '97',
     intro: 'Hi, ik ben Maurits Brouwer, een enthousiaste front end developer met een passie voor web design. Ik maak coole digitale producten en zorg dat de gebruiker altijd de juiste experience heeft.',
     study: 'Ik ben afgestudeerd bij Communication & Multimedia Design aan de Haagse Hogeschool.',
     image: {
@@ -29,7 +30,7 @@ const headlineData = {
 const workData = {
     itemOne: {
         image: 'img/Maurits_Brouwer_Item_BrigitteStarkPortfolio.png',
-        pagelink: '',
+        pagelink: '/artportfolio',
         weblink: 'https://brigittestark.nl',
         github: 'https://github.com/Maurits97/Brigitte-Portfolio',
         header: 'Art portfolio',
@@ -37,7 +38,7 @@ const workData = {
     },
     itemTwo: {
         image: 'img/Maurits_Brouwer_Item_Denkeffekt.jpg',
-        pagelink: '',
+        pagelink: '/denkeffekt',
         weblink: 'https://denkeffekt.nl',
         github: 'https://github.com/Maurits97/Denkeffekt',
         header: 'Denkeffekt Remedial Teaching',
@@ -78,5 +79,34 @@ const contactData = {
             instagram: 'Instagram',
             twitter: 'Twitter',
         },
+    },
+}
+
+const projectInfo = {
+    artportfolio: {
+        header: 'Art portfolio',
+        weblink: 'https://brigittestark.nl',
+        github: 'https://github.com/Maurits97/Brigitte-Portfolio',
+        text: {
+            one: 'Het art portfolio is in opdracht van Brigitte Stark gemaakt. Bij deze opdracht was ik verantwoordelijk voor zowel het design als de development. De website is op een efficiente manier in elkaar gezet dankzij het Vue.js Framework. Met behulp van vue.js bleef mijn code "DRY" en kost het nauwelijks tijd om een nieuw kunstwerk aan de website toe te voegen.',
+            two: 'Testing'
+        },
+        image: {
+            one: '',
+            two: ''
+        }
+    },
+    denkeffekt: {
+        header: 'Denkeffekt remedial teaching',
+        weblink: 'https://denkeffekt.nl',
+        github: 'https://github.com/Maurits97/Denkeffekt',
+        text: {
+            one: 'Lelz',
+            two: 'testing test'
+        },
+        image: {
+            one: '',
+            two: ''
+        }
     },
 }
