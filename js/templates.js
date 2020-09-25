@@ -48,7 +48,7 @@ const homepage = {
 		</div>
 
 		<div class='subwork'>
-			<h3 class="subwork__header">Overige projecten</h3>
+			<h3 class="subwork__header">Overige projecten (coming soon)</h3>
 			<div class="subwork--pushleft">
 				<div class="subwork__item" v-for="item in subworkData"><a :href='item.pagelink'>
 					<div class="subwork__item__image" v-bind:style="{ backgroundImage: 'url(' + item.image + ')' }"></div>
@@ -94,9 +94,13 @@ const project = {
 				<a :href='projectInfo[$route.params.project].github' target='blank' ><i class="arrow__circle material-icons-outlined">arrow_drop_down_circle</i>Github</a>
 			</div>
 			<div class="work__item__info">
-				<p class='work__item__text' v-for="text in projectInfo[$route.params.project].text" > {{text}}</p>
+				<p class='work__item__text project--morewidth' v-for="text in projectInfo[$route.params.project].text" > {{text}}</p>
 			</div>
-				<div class='work__item__underline'></div>
+			<div class='work__item__underline project--nomarginbottom'></div>
+
+			<div class="project__images">
+				<img class="project__image" v-for="image in projectInfo[$route.params.project].image"  :src="image" />
+			</div>
 		</div>
     </div>
 	`

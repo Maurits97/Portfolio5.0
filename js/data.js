@@ -29,7 +29,7 @@ const headlineData = {
 
 const workData = {
     itemOne: {
-        image: 'img/Maurits_Brouwer_Item_BrigitteStarkPortfolio.png',
+        image: 'img/brigittestarkportfolio/Maurits_Brouwer_Item_BrigitteStarkPortfolio2.png',
         pagelink: '/artportfolio',
         weblink: 'https://brigittestark.nl',
         github: 'https://github.com/Maurits97/Brigitte-Portfolio',
@@ -37,7 +37,7 @@ const workData = {
         text: 'Het art portfolio is in opdracht van Brigitte Stark gemaakt. Bij deze opdracht was ik verantwoordelijk voor zowel het design als de development. De website is op een efficiente manier in elkaar gezet dankzij het Vue.js Framework. Met behulp van vue.js bleef mijn code "DRY" en kost het nauwelijks tijd om een nieuw kunstwerk aan de website toe te voegen.'
     },
     itemTwo: {
-        image: 'img/Maurits_Brouwer_Item_Denkeffekt.jpg',
+        image: 'img/denkeffekt/Maurits_Brouwer_Item_Denkeffekt2.jpg',
         pagelink: '/denkeffekt',
         weblink: 'https://denkeffekt.nl',
         github: 'https://github.com/Maurits97/Denkeffekt',
@@ -92,8 +92,9 @@ const projectInfo = {
             two: 'Testing'
         },
         image: {
-            one: '',
-            two: ''
+            one: 'img/brigittestarkportfolio/Maurits_Brouwer_Item_BrigitteStarkPortfolio1.png',
+            two: 'img/brigittestarkportfolio/Maurits_Brouwer_Item_BrigitteStarkPortfolio2.png',
+            three: 'img/brigittestarkportfolio/Maurits_Brouwer_Item_BrigitteStarkPortfolio3.jpg'
         }
     },
     denkeffekt: {
@@ -105,8 +106,8 @@ const projectInfo = {
             two: 'testing test'
         },
         image: {
-            one: '',
-            two: ''
+            one: 'img/denkeffekt/Maurits_Brouwer_Item_Denkeffekt1.jpg',
+            two: 'img/denkeffekt/Maurits_Brouwer_Item_Denkeffekt2.png'
         }
     },
 }

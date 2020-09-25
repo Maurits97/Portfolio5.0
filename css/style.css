@@ -531,6 +531,12 @@ a {
   }
 }
 
+#content .work .work__item .work__item__info .project--morewidth {
+  width: calc(75% - 35px);
+  float: left;
+  margin-left: 20px;
+}
+
 #content .work .work__item .work__item__underline {
   left: calc(16.66667% - 23.33333px + 20px);
   position: relative;
@@ -549,6 +555,10 @@ a {
     float: left;
     margin-left: 20px;
   }
+}
+
+#content .work .work__item .project--nomarginbottom {
+  margin-bottom: 50px;
 }
 
 #content .subwork {
@@ -684,6 +694,16 @@ a {
   margin-top: 20px;
   font-size: 30px;
   font-weight: 500;
+}
+
+#content .project .project__images {
+  margin-top: -100px;
+}
+
+#content .project .project__images .project__image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
 }
 
 .contact {
