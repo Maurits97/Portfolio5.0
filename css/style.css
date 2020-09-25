@@ -299,6 +299,8 @@ a {
 
 @media only screen and (max-width: 768px) {
   #content .aboutme .aboutme__portret {
+    left: calc(0% - 20px + 20px);
+    position: relative;
     width: calc(91.66667% - 38.33333px);
     float: left;
     margin-left: 20px;
@@ -330,7 +332,7 @@ a {
   #content .aboutme .aboutme__firstname {
     font-size: 70px;
     top: 219px;
-    left: 52px;
+    left: 14px;
   }
 }
 
@@ -358,7 +360,7 @@ a {
   #content .aboutme .aboutme__surname {
     font-size: 50px;
     top: 190px;
-    left: 50px;
+    left: 11px;
   }
 }
 
@@ -383,6 +385,8 @@ a {
 
 @media only screen and (max-width: 768px) {
   #content .aboutme .aboutme__intro {
+    left: calc(0% - 20px + 20px);
+    position: relative;
     width: calc(91.66667% - 38.33333px);
     float: left;
     margin-left: 20px;
@@ -433,6 +437,8 @@ a {
     width: calc(91.66667% - 38.33333px);
     float: left;
     margin-left: 20px;
+    left: calc(0% - 20px + 20px);
+    position: relative;
   }
 }
 
@@ -493,7 +499,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   #content .work .work__item .work__item__link {
-    width: calc(50% - 30px);
+    width: calc(83.33333% - 36.66667px);
     float: left;
     margin-left: 20px;
     position: relative;
@@ -531,10 +537,12 @@ a {
   }
 }
 
-#content .work .work__item .work__item__info .project--morewidth {
-  width: calc(75% - 35px);
-  float: left;
-  margin-left: 20px;
+@media only screen and (min-width: 768px) {
+  #content .work .work__item .work__item__info .project--morewidth {
+    width: calc(75% - 35px);
+    float: left;
+    margin-left: 20px;
+  }
 }
 
 #content .work .work__item .work__item__underline {
@@ -567,6 +575,13 @@ a {
   width: calc(91.66667% - 38.33333px);
   float: left;
   margin-left: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  #content .subwork {
+    left: calc(0% - 20px + 20px);
+    position: relative;
+  }
 }
 
 @media only screen and (min-width: 1440px) {

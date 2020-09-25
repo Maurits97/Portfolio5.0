@@ -172,6 +172,7 @@ a {
 			margin-bottom: 120px;
 
 			@media only screen and (max-width: $tablet-max) {
+				@include grid-shift(0);
 				@include grid-column(11);
 
 				margin-bottom: 0px;
@@ -195,7 +196,7 @@ a {
 			@media only screen and (max-width: $tablet-max) {
 				font-size: 70px;
 				top: 219px;
-				left: 52px;
+				left: 14px;
 			}
 
 			@media only screen and (min-width: $desktop-high) {
@@ -219,7 +220,7 @@ a {
 			@media only screen and (max-width: $tablet-max) {
 				font-size: 50px;
 				top: 190px;
-				left: 50px;
+				left: 11px;
 			}
 
 			@media only screen and (min-width: $desktop-high) {
@@ -238,6 +239,7 @@ a {
 			margin-top: 200px;
 
 			@media only screen and (max-width: $tablet-max) {
+				@include grid-shift(0);
 				@include grid-column(11);
 
 				margin-top: 50px;
@@ -272,6 +274,7 @@ a {
 
 			@media only screen and (max-width: $tablet-max) {
 				@include grid-column(11);
+				@include grid-shift(0);
 			}
 
 			@media only screen and (min-width: $desktop-high) {
@@ -315,7 +318,7 @@ a {
 				flex-direction: column;
 
 				@media only screen and (max-width: $tablet-max) {
-					@include grid-column(6);
+					@include grid-column(10);
 					position: relative;
 					margin-left: -5px;
 					margin-bottom: 30px;
@@ -342,9 +345,12 @@ a {
 						@include grid-shift(0);
 					}
 				}
-				.project--morewidth {
-					@include grid-column(9);
+				@media only screen and (min-width: $tablet-max) {
+					.project--morewidth {
+						@include grid-column(9);
+					}
 				}
+				
 			}
 			
 			
@@ -369,6 +375,10 @@ a {
 	.subwork {
 		@include grid-shift(1);
 		@include grid-column(11);
+
+		@media only screen and (max-width: $tablet-max) {
+			@include grid-shift(0);
+		}
 
 		@media only screen and (min-width: $desktop-high) {
 			@include grid-shift(2);
