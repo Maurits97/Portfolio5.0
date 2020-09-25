@@ -462,6 +462,7 @@ a {
 			@include grid-shift(1);
 			@include grid-column(10);
 			font-style: italic;
+			z-index: 5;
 		}
 
 		.project__header {

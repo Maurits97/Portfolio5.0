@@ -688,6 +688,7 @@ a {
   float: left;
   margin-left: 20px;
   font-style: italic;
+  z-index: 5;
 }
 
 #content .project .project__header {
