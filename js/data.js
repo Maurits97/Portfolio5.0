@@ -34,15 +34,15 @@ const workData = {
         weblink: 'https://brigittestark.nl',
         github: 'https://github.com/Maurits97/Brigitte-Portfolio',
         header: 'Art portfolio',
-        text: 'Het art portfolio is in opdracht van Brigitte Stark gemaakt. Bij deze opdracht was ik verantwoordelijk voor zowel het design als de development. De website is op een efficiente manier in elkaar gezet dankzij het Vue.js Framework. Met behulp van vue.js bleef mijn code "DRY" en kost het nauwelijks tijd om een nieuw kunstwerk aan de website toe te voegen.'
+        text: 'Het art portfolio is in opdracht van Brigitte Stark gemaakt. Bij deze opdracht was ik verantwoordelijk voor zowel het design als de development. De website is op een efficiënte manier in elkaar gezet dankzij het Vue.js Framework. Met behulp van vue.js bleef mijn code "DRY" en kost het nauwelijks tijd om een nieuw kunstwerk aan de website toe te voegen. Daarnaast zorgt vue.js er ook voor dat er geen laadtijd is bij het aanklikken van een nieuwe pagina.'
     },
     itemTwo: {
-        image: 'img/denkeffekt/Maurits_Brouwer_Item_Denkeffekt2.jpg',
+        image: 'img/denkeffekt/Maurits_Brouwer_Item_Denkeffekt1.jpg',
         pagelink: '/denkeffekt',
         weblink: 'https://denkeffekt.nl',
         github: 'https://github.com/Maurits97/Denkeffekt',
         header: 'Denkeffekt Remedial Teaching',
-        text: 'Denkeffekt is een praktijk voor bijles en coaching. Voor denkeffekt was ik verantwoordelijk voor zowel het design als de development. De website is zonder front-end frameworks gemaakt. '
+        text: 'Denkeffekt is een praktijk voor bijles en coaching. Voor denkeffekt was ik verantwoordelijk voor zowel het design als de development. De website is zonder front-end frameworks gemaakt.'
     }
 }
 
@@ -88,8 +88,9 @@ const projectInfo = {
         weblink: 'https://brigittestark.nl',
         github: 'https://github.com/Maurits97/Brigitte-Portfolio',
         text: {
-            one: 'Het art portfolio is in opdracht van Brigitte Stark gemaakt. Bij deze opdracht was ik verantwoordelijk voor zowel het design als de development. De website is op een efficiente manier in elkaar gezet dankzij het Vue.js Framework. Met behulp van vue.js bleef mijn code "DRY" en kost het nauwelijks tijd om een nieuw kunstwerk aan de website toe te voegen.',
-            two: 'Testing'
+            one: 'Het art portfolio is in opdracht van Brigitte Stark gemaakt. Bij deze opdracht was ik verantwoordelijk voor zowel het design als de development. De website is op een efficiënte manier in elkaar gezet dankzij het Vue.js Framework. Met behulp van vue.js bleef mijn code "DRY" en kost het nauwelijks tijd om een nieuw kunstwerk aan de website toe te voegen. Daarnaast zorgt vue.js er ook voor dat er geen laadtijd is bij het aanklikken van een nieuwe pagina.',
+            two: 'Het belangrijkste onderdeel bij het ontwerpen van de website was om het simpel te houden. De focus moest liggen op de kunstwerken. Door de website strak en zwart/wit te houden valt je oog altijd als eerst op de kunstwerken. Om meer rust op de website te creëren is er ook gekozen om de woorden en regelhoogte wat te vergroten. Hierdoor oogt het wat rustiger op de website.',
+            three: 'Tijdens dit project heb ik leren werken met vue.js. Voorheen wist ik weinig hiervan af, maar aan de hand van stackoverflow en handige Youtube tutorials is het mij gelukt om een efficiënte en mooi project neer te zetten. Ook werd er in de css file gewerkt met sass (scss).'
         },
         image: {
             one: 'img/brigittestarkportfolio/Maurits_Brouwer_Item_BrigitteStarkPortfolio1.png',
@@ -102,8 +103,9 @@ const projectInfo = {
         weblink: 'https://denkeffekt.nl',
         github: 'https://github.com/Maurits97/Denkeffekt',
         text: {
-            one: 'Lelz',
-            two: 'testing test'
+            one: 'Denkeffekt is een praktijk voor bijles en coaching. Voor denkeffekt was ik verantwoordelijk voor zowel het design als de development. De website is zonder front-end frameworks gemaakt.',
+            two: 'Denkeffekt had al een logo met unieke kleuren. Deze kleuren, oranje en grijs, zijn daarom ook gekozen als huisstijl van de website. De website bestaat uit een aantal paginas met informatie over de praktijk. Elke pagina is voorzien van een refentie van oud leerlingen.',
+            three: 'Het programmeerwerk is relatief basic, standaard HTML en CSS en beetje javascript. Wel is er gebruik gemaakt van de Google maps API om het adres te tonen onder het kopje contact.'
         },
         image: {
             one: 'img/denkeffekt/Maurits_Brouwer_Item_Denkeffekt1.jpg',
