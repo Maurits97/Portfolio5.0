@@ -685,17 +685,6 @@ a {
   }
 }
 
-@media only screen and (min-width: 1440px) {
-  #content .project .project__number:after {
-    top: 224px;
-    left: 664px;
-    width: 9px;
-    height: 357px;
-    -webkit-animation: firstload--high 1s ease-out;
-            animation: firstload--high 1s ease-out;
-  }
-}
-
 #content .project .project__terug {
   width: calc(25% - 25px);
   float: left;

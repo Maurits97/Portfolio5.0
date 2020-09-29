@@ -456,14 +456,6 @@ a {
 				@media only screen and (max-width: $tablet-max) {
 					display: none;
 				}
-	
-				@media only screen and (min-width: $desktop-high) {
-					top: 224px;
-					left: 664px;
-					width: 9px;
-					height: 357px;
-					animation: firstload--high 1s ease-out;
-				}
 			}
 		}
 

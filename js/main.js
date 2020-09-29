@@ -18,7 +18,7 @@ const router = new VueRouter({
     //when clicked on router link, page will load on top.
     scrollBehavior (to, from, savedPosition) {
         return { x: 0, y: 0 }
-      }
+    }
 })
 
 var app = new Vue({
