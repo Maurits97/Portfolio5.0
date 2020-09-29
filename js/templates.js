@@ -85,7 +85,7 @@ const project = {
 	<div class="project work">
 		<p class='project__number'>97</p>
 
-		<a class="project__terug" href='/'>Terug</a>
+		<p class="project__terug"><a href='/'>Terug</a></p>
 
 		<div class="work__item">
 			<h3 class='work__item__header'> {{projectInfo[$route.params.project].header}} </h3>

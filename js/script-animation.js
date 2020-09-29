@@ -20,7 +20,6 @@ $(window).on('scroll', function() {
 			}
 
 		header.css({ 'opacity' : 0.1 });
-		
 	}
 });
 
