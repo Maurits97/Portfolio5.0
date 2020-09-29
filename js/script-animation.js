@@ -5,22 +5,24 @@ var title = $('.title');
 
 $(window).on('scroll', function() {
 	var st = $(this).scrollTop();
-	console.log(screen.width );
 	if(st < 180){
+		title.css({ 'display' : 'block' });
 		if (screen.width > 768){
 			headerNumber.css({ 'margin-left' : ((120 - (st * 0.555)) + 'px')});
    			title.css({ 'top' : ((60 - (st * 0.222)) + 'px')});
 		}
 		   
-   	header.css({ 'opacity' : (1 - st/200) });
-	arrow.css({ 'opacity' : (1 - st/90)});
+		header.css({ 'opacity' : (1 - st/200) });
+		arrow.css({ 'opacity' : (1 - st/90)});
+		title.css({ 'opacity' : (1 - st/150) });
 	   
-   } else {
-	   if (screen.width > 768){
-		   headerNumber.css({ 'margin-left' : (20 + 'px')});	
-		}
-		    
-   	header.css({ 'opacity' : 0.1 });
-   }
+	} else {
+		if (screen.width > 768){
+			headerNumber.css({ 'margin-left' : (20 + 'px')});	
+			}
+
+		header.css({ 'opacity' : 0.1 });
+		title.css({ 'display' : 'none' });
+	}
 });
 

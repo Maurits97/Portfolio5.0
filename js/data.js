@@ -104,7 +104,7 @@ const projectInfo = {
         github: 'https://github.com/Maurits97/Denkeffekt',
         text: {
             one: 'Denkeffekt is een praktijk voor bijles en coaching. Voor denkeffekt was ik verantwoordelijk voor zowel het design als de development. De website is zonder front-end frameworks gemaakt.',
-            two: 'Denkeffekt had al een logo met unieke kleuren. Deze kleuren, oranje en grijs, zijn daarom ook gekozen als huisstijl van de website. De website bestaat uit een aantal paginas met informatie over de praktijk. Elke pagina is voorzien van een refentie van oud leerlingen.',
+            two: 'Denkeffekt had al een logo met unieke kleuren. Deze kleuren, oranje en grijs, zijn daarom ook gekozen als huisstijl van de website. De website bestaat uit een aantal paginas met informatie over de praktijk. Elke pagina is voorzien van een referentie van oud leerlingen.',
             three: 'Het programmeerwerk is relatief basic, standaard HTML en CSS en beetje javascript. Wel is er gebruik gemaakt van de Google maps API om het adres te tonen onder het kopje contact.'
         },
         image: {
