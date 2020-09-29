@@ -9,9 +9,9 @@ $(window).on('scroll', function() {
 		if (screen.width > 768){
 			headerNumber.css({ 'margin-left' : ((120 - (st * 0.555)) + 'px')});
 			//    title.css({ 'top' : ((60 - (st * 0.222)) + 'px')});
-			title.css({ 'top' : ((60 - (st * 0.6)) + 'px')});
 		}
-		   
+		
+		title.css({ 'top' : ((60 - (st * 0.6)) + 'px')});   
 		header.css({ 'opacity' : (1 - st/200) });
 		arrow.css({ 'opacity' : (1 - st/90)});
 	} else {
