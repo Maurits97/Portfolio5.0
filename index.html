@@ -1,56 +1,71 @@
 <!DOCTYPE html>
 <html lang="nl">
-<head>
-	<title>Maurits Brouwer portfolio website</title>
+  <head>
+    <title>Maurits Brouwer portfolio website</title>
 
-	<!--meta-->
-	<meta charset="utf-8">
-	<meta name="author" content="Maurits Brouwer">
-	<meta name="description" content="Maurits Brouwer - een enthousiaste front end developer met een passie voor web design.">
-	<meta name="keywords" content="Maurits, Brouwer, Portfolio, Website, Front-End, Development, Visual, Design, Communication, Multimediadesign">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--meta-->
+    <meta charset="utf-8" />
+    <meta name="author" content="Maurits Brouwer" />
+    <meta
+      name="description"
+      content="Maurits Brouwer - een enthousiaste front end developer met een passie voor web design."
+    />
+    <meta
+      name="keywords"
+      content="Maurits, Brouwer, Portfolio, Website, Front-End, Development, Visual, Design, Communication, Multimediadesign"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!--links-->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-	<link rel="shortcut icon" type="image/x-icon" href="img/Portfolio_Website_Maurits_Brouwer_Favicon.png">
+    <!--links-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="img/Portfolio_Website_Maurits_Brouwer_Favicon.png"
+    />
 
-	<!-- scripts-->
-	<!--Jquery CDN-->
-	<script src="https://code.jquery.com/jquery-3.4.0.slim.min.js"></script>
-	<!--AOS CDN-->
-	<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <!-- scripts-->
+    <!--Jquery CDN-->
+    <script src="https://code.jquery.com/jquery-3.4.0.slim.min.js"></script>
+    <!--AOS CDN-->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  </head>
 
-</head>
+  <body>
+    <div id="app">
+      <div class="title">
+        <a href="index.html" class="title__name">Maurits Brouwer</a>
+        <p class="title__job">Front end developer</p>
+      </div>
 
-<body>
-	<div id="app">
-		<div class='title'>
-			<a href='index.html' class='title__name'>Maurits Brouwer</a>
-			<p class='title__job'>Front end developer</p>
-		</div>
+      <div id="content">
+        <router-view></router-view>
+      </div>
+    </div>
 
-		<div id="content">
-            <router-view></router-view>
-        </div>
-	</div>
-	
-	<div class='footer'>
-		<p class='footer__name'>Maurits Brouwer</p>
-		<p id='footer__year'></p>
-	</div>
+    <div class="footer">
+      <p class="footer__name">Maurits Brouwer</p>
+      <p id="footer__year"></p>
+    </div>
 
-	<!--scripts-->
-	<!--Vue CDN-->
-	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
-	<!--Vue router CDN-->
-	<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
-	<!--Custom scripts-->
-	<script src="js/data.js"></script>
-	<script src="js/templates.js"></script>
-	<script src="js/main.js"></script>
-	<script src="js/script-animation.js"></script>
-</body>
+    <!--scripts-->
+    <!--Vue CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!--Vue router CDN-->
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+    <!--Custom scripts-->
+    <script src="js/data.js"></script>
+    <script src="js/templates.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/script-animation.js"></script>
+  </body>
 </html>
