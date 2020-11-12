@@ -38,7 +38,7 @@ const homepage = {
 				<div class='work__item__link'>
 					<router-link :to= 'item.pagelink'><i class="arrow__circle material-icons-outlined ">arrow_drop_down_circle</i>Lees meer..</router-link>
 					<a :href='item.weblink' target='blank' ><i class="arrow__circle material-icons-outlined">arrow_drop_down_circle</i>Bekijk website..</a>
-					<a :href='item.github' target='blank' ><i class="arrow__circle material-icons-outlined">arrow_drop_down_circle</i>Github</a>
+					<a :href='item.github' target='blank' v-if="item.github != ''" ><i class="arrow__circle material-icons-outlined">arrow_drop_down_circle</i>Github</a>
 				</div>
 				<div class="work__item__info">
 					<p class='work__item__text'> {{ item.text }}</p>
@@ -91,7 +91,7 @@ const project = {
 			<h3 class='work__item__header'> {{projectInfo[$route.params.project].header}} </h3>
 			<div class='work__item__link'>
 				<a :href='projectInfo[$route.params.project].weblink' target='blank' ><i class="arrow__circle material-icons-outlined">arrow_drop_down_circle</i>Bekijk website..</a>
-				<a :href='projectInfo[$route.params.project].github' target='blank' ><i class="arrow__circle material-icons-outlined">arrow_drop_down_circle</i>Github</a>
+				<a :href='projectInfo[$route.params.project].github' target='blank' v-if="projectInfo[$route.params.project].github != ''"><i class="arrow__circle material-icons-outlined">arrow_drop_down_circle</i>Github</a>
 			</div>
 			<div class="work__item__info">
 				<p class='work__item__text project--morewidth' v-for="text in projectInfo[$route.params.project].text" > {{text}}</p>
