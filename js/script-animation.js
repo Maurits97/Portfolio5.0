@@ -12,7 +12,7 @@ $(window).on('scroll', function() {
 			title.css({ 'top' : ((60 - (st * 0.6)) + 'px')});
 		}
 		   
-		header.css({ 'opacity' : (1 - st/200) });
+		header.css({ 'opacity' : (1 - st/190) });
 		arrow.css({ 'opacity' : (1 - st/90)});
 		title.css({ 'opacity' : (1 - st/90)});
 
@@ -21,7 +21,7 @@ $(window).on('scroll', function() {
 			headerNumber.css({ 'margin-left' : (20 + 'px')});	
 			}
 
-		header.css({ 'opacity' : 0.1 });
+		header.css({ 'opacity' : 0.05 });
 	}
 });
 
