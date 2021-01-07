@@ -1,15 +1,5 @@
-Project usage
+Portfolio Website
 
-Project is using sass/scss.
-- Make sure you have sass installed.
-- Always use the scss files when changing something.
-- Make sure you 'watch' the scss file in the console:
-   Navigate with the console to the css folder and type: sass --watch style.scss:style.css
+Made with Vue.js
 
-
-Personal note:
-cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/Documents/Github/portfolio5.0
-
-TODO
-- Implement HCI Course
    
