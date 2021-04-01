@@ -37,12 +37,13 @@ const workData = {
     github: "https://github.com/Maurits97/react-crypto",
     tools: {
       one: 'SCSS',
-      two: 'React.js',
-      three: 'JSX',
-      four: 'Redux',
-      five: 'Crypto public API',
-      six: 'SPA',
-      seven: 'Recharts'
+      two: 'JSX',
+      three: 'React.js',
+      four: 'React Router',
+      five: 'Redux',
+      six: 'Crypto public API',
+      seven: 'SPA',
+      eight: 'Recharts'
     },
     header: "Crypto Website",
     text: "Het crypto project is ontstaan uit een persoonlijke interesse in crypto currency en behoefte aan het verbreden van mijn codeer skills. De uitdaging was om aan de hand van React.js en Redux een crypto website te maken die data weergeeft vanuit een API."
@@ -57,7 +58,8 @@ const workData = {
       one: 'HTML',
       two: 'SCSS',
       three: 'Vue.js',
-      six: 'SPA',
+      four: 'Vue Router',
+      five: 'SPA'
     },
     header: "Art portfolio",
     text:
