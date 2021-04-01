@@ -36,9 +36,9 @@ const workData = {
     weblink: "https://crypto.mauritsbrouwer.nl",
     github: "https://github.com/Maurits97/react-crypto",
     tools: {
-      one: 'HTML',
-      two: 'SCSS',
-      three: 'React.js',
+      one: 'SCSS',
+      two: 'React.js',
+      three: 'JSX',
       four: 'Redux',
       five: 'Crypto public API',
       six: 'SPA',
