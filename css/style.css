@@ -551,6 +551,11 @@ a {
   width: calc(83.33333% - 36.66667px);
   float: left;
   margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   border-bottom: 3px solid black;
   margin-bottom: 200px;
 }
@@ -563,6 +568,11 @@ a {
     float: left;
     margin-left: 20px;
   }
+}
+
+#content .work .work__item .work__item__underline .work__item__tools {
+  margin-bottom: 10px;
+  margin-right: 30px;
 }
 
 #content .work .work__item .project--nomarginbottom {

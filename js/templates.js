@@ -43,7 +43,9 @@ const homepage = {
 				<div class="work__item__info">
 					<p class='work__item__text'> {{ item.text }}</p>
 				</div>
-				<div class='work__item__underline'></div>
+				<div class='work__item__underline'>
+					<p class='work__item__tools' v-for="tool in item.tools">{{tool}}</p>
+				</div>
 			</div>
 		</div>
 
@@ -94,9 +96,11 @@ const project = {
 				<a :href='projectInfo[$route.params.project].github' target='blank' v-if="projectInfo[$route.params.project].github != ''"><i class="arrow__circle material-icons-outlined">arrow_drop_down_circle</i>Github</a>
 			</div>
 			<div class="work__item__info">
-				<p class='work__item__text project--morewidth' v-for="text in projectInfo[$route.params.project].text" > {{text}}</p>
+				<p class='work__item__text project--morewidth' v-for="text in projectInfo[$route.params.project].text"> {{text}}</p>
 			</div>
-			<div class='work__item__underline project--nomarginbottom'></div>
+			<div class='work__item__underline project--nomarginbottom'>
+				<p class='work__item__tools' v-for="tool in projectInfo[$route.params.project].tools">{{tool}}</p>
+			</div>
 
 			<div class="project__images">
 				<img class="project__image" v-for="image in projectInfo[$route.params.project].image"  :src="image" />

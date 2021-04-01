@@ -35,6 +35,15 @@ const workData = {
     pagelink: "/cryptowebsite",
     weblink: "https://crypto.mauritsbrouwer.nl",
     github: "https://github.com/Maurits97/react-crypto",
+    tools: {
+      one: 'HTML',
+      two: 'SCSS',
+      three: 'React.js',
+      four: 'Redux',
+      five: 'Crypto public API',
+      six: 'SPA',
+      seven: 'Recharts'
+    },
     header: "Crypto Website",
     text: "Het crypto project is ontstaan uit een persoonlijke interesse in crypto currency en behoefte aan het verbreden van mijn codeer skills. De uitdaging was om aan de hand van React.js en Redux een crypto website te maken die data weergeeft vanuit een API."
   },
@@ -44,6 +53,12 @@ const workData = {
     pagelink: "/artportfolio",
     weblink: "https://brigittestark.nl",
     github: "https://github.com/Maurits97/Brigitte-Portfolio",
+    tools: {
+      one: 'HTML',
+      two: 'SCSS',
+      three: 'Vue.js',
+      six: 'SPA',
+    },
     header: "Art portfolio",
     text:
       'Het art portfolio is in opdracht van Brigitte Stark gemaakt. Bij deze opdracht was ik verantwoordelijk voor zowel het design als de development. De website is op een efficiënte manier in elkaar gezet dankzij het Vue.js Framework. Met behulp van vue.js bleef mijn code "DRY" en kost het nauwelijks tijd om een nieuw kunstwerk aan de website toe te voegen. Daarnaast zorgt vue.js er ook voor dat er geen laadtijd is bij het aanklikken van een nieuwe pagina.',
@@ -53,6 +68,11 @@ const workData = {
     pagelink: "/denkeffekt",
     weblink: "https://denkeffekt.nl",
     github: "",
+    tools: {
+      one: 'HTML',
+      two: 'SCSS',
+      three: 'Google maps API'
+    },
     header: "Denkeffekt Remedial Teaching",
     text:
       "Denkeffekt is een praktijk voor bijles en coaching. Voor denkeffekt was ik verantwoordelijk voor zowel het design als de development. De website is zonder front-end frameworks gemaakt.",
@@ -100,6 +120,15 @@ const projectInfo = {
     header: "Crypto Website",
     weblink: "https://crypto.mauritsbrouwer.nl",
     github: "https://github.com/Maurits97/react-crypto",
+    tools: {
+      one: 'HTML',
+      two: 'SCSS',
+      three: 'React.js',
+      four: 'Redux',
+      five: 'Crypto public API',
+      six: 'SPA',
+      seven: 'Recharts'
+    },
     text: {
       one: 'Het crypto project is ontstaan uit een persoonlijke interesse in crypto currency en behoefte aan het verbreden van mijn codeer skills. De uitdaging was om aan de hand van React.js en Redux een crypto website te maken die data weergeeft vanuit een API.',
       two: 'Ik begon met het ontwerpen van de website. Hiervoor moest ik eerst weten wat er allemaal op de website moest/kon komen. Dit was afhankelijk van de data die ik kreeg uit mijn API. Ik weet nog weinig van backend omgevingen af, dus zocht ik naar een open api zodat ik geen persoonlijk api-key had die ik moest verbergen. Ik kwam uit op de API CoinGecko. Voor het design heb ik veel inspiratie gehaald uit websites zoals CoinMarketCap.com.',
@@ -119,6 +148,12 @@ const projectInfo = {
     header: "Art portfolio",
     weblink: "https://brigittestark.nl",
     github: "https://github.com/Maurits97/Brigitte-Portfolio",
+    tools: {
+      one: 'HTML',
+      two: 'SCSS',
+      three: 'Vue.js',
+      six: 'SPA',
+    },
     text: {
       one:
         'Het art portfolio is in opdracht van Brigitte Stark gemaakt. Bij deze opdracht was ik verantwoordelijk voor zowel het design als de development. De website is op een efficiënte manier in elkaar gezet dankzij het Vue.js Framework. Met behulp van vue.js bleef mijn code "DRY" en kost het nauwelijks tijd om een nieuw kunstwerk aan de website toe te voegen. Daarnaast is de website een Single Page Application (SPA) wat er voor zorgt dat er geen laadtijd is bij het aanklikken van een "nieuwe pagina". ',
@@ -140,6 +175,11 @@ const projectInfo = {
     header: "Denkeffekt remedial teaching",
     weblink: "https://denkeffekt.nl",
     github: "",
+    tools: {
+      one: 'HTML',
+      two: 'SCSS',
+      three: 'Google maps API'
+    },
     text: {
       one:
         "Denkeffekt is een praktijk voor bijles en coaching. Voor denkeffekt was ik verantwoordelijk voor zowel het design als de development. De website is zonder front-end frameworks gemaakt.",
